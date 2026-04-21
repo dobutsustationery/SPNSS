@@ -14,7 +14,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: process.env.PUBLIC_BASE_PATH || (process.env.NODE_ENV === 'production' ? '/SPNSS' : '')
+			base: process.env.PUBLIC_BASE_PATH || ''
 		}
 	}
 };
