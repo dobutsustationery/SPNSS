@@ -7,10 +7,14 @@ const config = {
 
 	kit: {
 		adapter: adapter({
-			fallback: '404.html'
+			pages: 'build',
+			assets: 'build',
+			fallback: '404.html',
+			precompress: false,
+			strict: true
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? process.env.PUBLIC_BASE_PATH || '/SPNSS' : ''
+			base: process.env.PUBLIC_BASE_PATH || (process.env.NODE_ENV === 'production' ? '/SPNSS' : '')
 		}
 	}
 };
