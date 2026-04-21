@@ -1,0 +1,1 @@
+import{P as e,f as t,m as n}from"../chunks/CKaW5N7Q.js";import"../chunks/DEDqjojZ.js";e();var r=n(`<div class="landing-page svelte-1uha8ag"><h1 class="svelte-1uha8ag">SPNSS EOOD.</h1> <address class="svelte-1uha8ag">4 Hristo Belchev St.<br/> Floor 1<br/> Sofia 1000<br/> Bulgaria</address></div>`);function i(e){t(e,r())}export{i as component};
