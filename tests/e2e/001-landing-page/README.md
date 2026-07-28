@@ -7,7 +7,6 @@ As a visitor or Apple reviewer, I want to view SPNSS EOOD company information, b
 ![Landing Page Content and Corporate Identity](./screenshots/000-initial-load.png)
 
 ### Verifications
-
 - [x] Company name is visible
 - [x] Address is visible
 - [x] City and country are visible
@@ -22,6 +21,6 @@ As a visitor or Apple reviewer, I want to view SPNSS EOOD company information, b
 ![iOS Mobile App Support Portal for Apple Developer Compliance](./screenshots/001-app-support-page.png)
 
 ### Verifications
-
 - [x] App Support Hub title is visible
 - [x] Data deletion instructions are present
+
