@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#09090b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#9a3412"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e4e4e7"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Base Rounded Squircle -->
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="url(#bgGrad)" />
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="8" />
+
+  <!-- Monogram Logo Mark SP -->
+  <g transform="translate(136, 120)">
+    <!-- Stylized S Curve Gold -->
+    <path d="M 160 40 C 220 40, 240 80, 240 110 C 240 160, 140 170, 140 210 C 140 240, 170 250, 210 250 C 230 250, 250 240, 260 230" 
+          fill="none" stroke="url(#goldGrad)" stroke-width="42" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Interlocking P / Modern Architectural Arch White -->
+    <path d="M 80 270 L 80 50 L 170 50 C 215 50, 215 130, 170 130 L 80 130" 
+          fill="none" stroke="url(#accentGrad)" stroke-width="36" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
