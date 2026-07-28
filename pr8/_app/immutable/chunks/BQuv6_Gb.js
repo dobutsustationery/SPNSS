@@ -1,0 +1,1 @@
+import{V as e}from"./BKYziMh2.js";e();
