@@ -3,12 +3,12 @@
 
 	const divisions = [
 		{
-			title: 'Consulting & translation',
-			services: 'Business advisory, translation services and English instruction.',
+			title: 'Consulting & Translation',
+			services: 'Business consulting, translation services and English instruction.',
 			href: `${base}/consulting-and-translation`
 		},
 		{
-			title: 'Mobile applications',
+			title: 'Mobile Applications',
 			services: 'Development, publishing and support for SPNSS mobile products.',
 			href: `${base}/mobile-apps`
 		},
@@ -43,7 +43,7 @@
 
 <section class="directory" aria-labelledby="directory-title">
 	<div class="container">
-		<h2 id="directory-title">Business areas</h2>
+		<h2 id="directory-title">Business Areas</h2>
 		<div class="division-grid">
 			{#each divisions as division (division.title)}
 				<a class="division" href={division.href}>

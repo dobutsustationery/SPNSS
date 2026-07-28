@@ -20,18 +20,18 @@
 
 <section class="content-section compact">
 	<div class="container content-grid">
-		<h2>Product range</h2>
+		<h2>Product Range</h2>
 		<div class="service-list">
 			<div class="service-item">
-				<h3>Writing instruments</h3>
+				<h3>Writing Instruments</h3>
 				<p>Pens, pencils, inks and related accessories from Japanese manufacturers.</p>
 			</div>
 			<div class="service-item">
-				<h3>Paper products</h3>
+				<h3>Paper Products</h3>
 				<p>Notebooks, loose-leaf paper, planners and correspondence goods.</p>
 			</div>
 			<div class="service-item">
-				<h3>Desk goods</h3>
+				<h3>Desk Goods</h3>
 				<p>Tools, storage and accessories for writing and office use.</p>
 			</div>
 			<nav class="page-actions" aria-label="Dobutsu Stationery links">

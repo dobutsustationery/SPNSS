@@ -6,7 +6,7 @@
 <section class="page-hero">
 	<div class="container">
 		<p class="eyebrow">Last updated 28 July 2026</p>
-		<h1>Privacy policy</h1>
+		<h1>Privacy Policy</h1>
 	</div>
 </section>
 
@@ -20,7 +20,7 @@
 
 		<div class="sections">
 			<section>
-				<h2>GDPR compliance</h2>
+				<h2>GDPR Compliance</h2>
 				<p>
 					SPNSS EOOD processes personal data in accordance with the EU General Data Protection
 					Regulation (GDPR).
@@ -28,7 +28,7 @@
 			</section>
 
 			<section>
-				<h2>Information we process</h2>
+				<h2>Information We Process</h2>
 				<p>
 					When you contact us, we process your email address and message to respond to your enquiry.
 					Our apps may receive diagnostic information supplied by Apple when you choose to share it.
@@ -38,7 +38,7 @@
 			</section>
 
 			<section>
-				<h2>Use and sharing</h2>
+				<h2>Use and Sharing</h2>
 				<p>
 					We use information only to provide support, operate the relevant app and meet legal
 					obligations. We do not sell personal data. Service providers may process data only as
@@ -47,7 +47,7 @@
 			</section>
 
 			<section>
-				<h2>Retention and your rights</h2>
+				<h2>Retention and Your Rights</h2>
 				<p>
 					We keep personal data only as long as needed for these purposes or required by law. You
 					may request access, correction or deletion, withdraw consent, or object to processing by

@@ -35,12 +35,12 @@ test('Landing page renders correctly', async ({ page }, testInfo) => {
 			{
 				spec: 'Consulting and Translation services are visible',
 				check: async () =>
-					await expect(page.locator('h3:has-text("Consulting & translation")')).toBeVisible()
+					await expect(page.locator('h3:has-text("Consulting & Translation")')).toBeVisible()
 			},
 			{
 				spec: 'Mobile Application Engineering is visible',
 				check: async () =>
-					await expect(page.locator('h3:has-text("Mobile applications")')).toBeVisible()
+					await expect(page.locator('h3:has-text("Mobile Applications")')).toBeVisible()
 			},
 			{
 				spec: 'Dobutsu Stationery section and link are visible',
