@@ -18,7 +18,6 @@
 			<a href="{base}/consulting-and-translation">Consulting & Translation</a>
 			<a href="{base}/mobile-apps">iOS Mobile Apps</a>
 			<a href="{base}/stationery">Dobutsu Stationery</a>
-			<a href="{base}/app-support">App Support</a>
 			<a href="{base}/contact">Contact</a>
 		</nav>
 
@@ -58,10 +57,8 @@
 			<a href="{base}/consulting-and-translation" onclick={toggleMenu}>Consulting & Translation</a>
 			<a href="{base}/mobile-apps" onclick={toggleMenu}>iOS Mobile Apps</a>
 			<a href="{base}/stationery" onclick={toggleMenu}>Dobutsu Stationery</a>
-			<a href="{base}/app-support" onclick={toggleMenu}>App Support</a>
 			<a href="{base}/contact" onclick={toggleMenu}>Contact Info</a>
 			<a href="{base}/privacy" onclick={toggleMenu}>Privacy Policy</a>
-			<a href="{base}/terms" onclick={toggleMenu}>Terms of Service</a>
 		</div>
 	{/if}
 </header>

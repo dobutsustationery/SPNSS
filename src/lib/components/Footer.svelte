@@ -32,23 +32,14 @@
 			</div>
 
 			<div class="footer-nav-col">
-				<span class="footer-heading">Developer & Support</span>
-				<ul>
-					<li><a href="{base}/app-support">iOS App Support Portal</a></li>
-					<li><a href="{base}/privacy">Privacy Policy</a></li>
-					<li><a href="{base}/terms">Terms of Service</a></li>
-					<li><a href="{base}/contact">Contact</a></li>
-				</ul>
-			</div>
-
-			<div class="footer-nav-col">
 				<span class="footer-heading">Company</span>
 				<p class="apple-dev-text">
 					SPNSS EOOD<br />Registered in Sofia, Bulgaria
 				</p>
-				<p class="contact-email">
-					Support: <a href="mailto:support@spnss.com">support@spnss.com</a>
-				</p>
+				<ul>
+					<li><a href="{base}/contact">Contact</a></li>
+					<li><a href="{base}/privacy">Privacy</a></li>
+				</ul>
 			</div>
 		</div>
 
@@ -56,8 +47,7 @@
 			<p>&copy; {new Date().getFullYear()} SPNSS EOOD. All rights reserved.</p>
 			<div class="bottom-links">
 				<a href="{base}/privacy">Privacy Policy</a>
-				<a href="{base}/terms">Terms of Service</a>
-				<a href="{base}/app-support">App Support</a>
+				<a href="{base}/contact">Contact</a>
 			</div>
 		</div>
 	</div>
@@ -73,7 +63,7 @@
 
 	.footer-top {
 		display: grid;
-		grid-template-columns: 1.6fr 1fr 1fr 1fr;
+		grid-template-columns: 1.6fr 1fr 1fr;
 		gap: 3.5rem;
 		margin-bottom: 4rem;
 	}
@@ -133,16 +123,6 @@
 		color: var(--text-secondary);
 		line-height: 1.5;
 		margin-bottom: 0.75rem;
-	}
-
-	.contact-email {
-		font-size: 0.85rem;
-		color: var(--text-muted);
-	}
-
-	.contact-email a {
-		color: var(--text-primary);
-		font-weight: 500;
 	}
 
 	.footer-bottom {

@@ -35,9 +35,8 @@
 				<p>Technical support, privacy enquiries and data deletion requests.</p>
 			</div>
 			<nav class="page-actions" aria-label="Mobile application information">
-				<a class="btn btn-primary" href="{base}/app-support">App support</a>
+				<a class="btn btn-primary" href="{base}/contact">Contact</a>
 				<a href="{base}/privacy">Privacy policy →</a>
-				<a href="{base}/terms">Terms →</a>
 			</nav>
 		</div>
 	</div>

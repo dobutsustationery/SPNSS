@@ -5,7 +5,7 @@ test('Landing page renders correctly', async ({ page }, testInfo) => {
 	const tester = new TestStepHelper(page, testInfo);
 	tester.setMetadata(
 		'Landing Page Rendering',
-		'As a visitor or Apple reviewer, I want to view SPNSS EOOD company information, business services, Apple developer credentials, and stationery e-commerce links.'
+		'As a visitor, I want to view SPNSS EOOD company information and business services.'
 	);
 
 	await page.goto('/');
@@ -46,29 +46,22 @@ test('Landing page renders correctly', async ({ page }, testInfo) => {
 				spec: 'Dobutsu Stationery section and link are visible',
 				check: async () =>
 					await expect(page.locator('a[href*="dobutsustationery.com"]').first()).toBeVisible()
-			},
-			{
-				spec: 'Mobile app support is linked',
-				check: async () =>
-					await expect(page.locator('a[href$="/app-support"]').first()).toBeVisible()
 			}
 		]
 	});
 
-	await page.goto('/app-support');
+	await page.goto('/contact');
 
-	await tester.step('app-support-page', {
-		description: 'iOS Mobile App Support Portal for Apple Developer Compliance',
+	await tester.step('contact-page', {
+		description: 'Company contact information',
 		verifications: [
 			{
-				spec: 'App Support Hub title is visible',
-				check: async () =>
-					await expect(page.locator('h1')).toContainText('iOS Mobile Application Support Hub')
+				spec: 'Company email is visible',
+				check: async () => await expect(page.locator('text=elpis@spnss.com')).toBeVisible()
 			},
 			{
-				spec: 'Data deletion instructions are present',
-				check: async () =>
-					await expect(page.locator('text=User Account & Data Deletion Requests')).toBeVisible()
+				spec: 'Registered address is visible',
+				check: async () => await expect(page.locator('address').first()).toContainText('Sofia 1000')
 			}
 		]
 	});
