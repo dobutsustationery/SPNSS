@@ -25,17 +25,6 @@
 					<li><a href="{base}/stationery">Dobutsu Stationery</a></li>
 				</ul>
 			</div>
-
-			<div class="footer-nav-col">
-				<span class="footer-heading">Company</span>
-				<p class="apple-dev-text">
-					SPNSS EOOD<br />Registered in Sofia, Bulgaria
-				</p>
-				<ul>
-					<li><a href="{base}/contact">Contact</a></li>
-					<li><a href="{base}/privacy">Privacy Policy</a></li>
-				</ul>
-			</div>
 		</div>
 
 		<div class="footer-bottom">
@@ -58,7 +47,7 @@
 
 	.footer-top {
 		display: grid;
-		grid-template-columns: 1.6fr 1fr 1fr;
+		grid-template-columns: 1.6fr 1fr;
 		gap: 3.5rem;
 		margin-bottom: 4rem;
 	}
@@ -111,13 +100,6 @@
 
 	.footer-nav-col ul a:hover {
 		color: var(--text-primary);
-	}
-
-	.apple-dev-text {
-		font-size: 0.85rem;
-		color: var(--text-secondary);
-		line-height: 1.5;
-		margin-bottom: 0.75rem;
 	}
 
 	.footer-bottom {
