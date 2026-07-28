@@ -8,7 +8,8 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" type="image/svg+xml" href={favicon} />
+	<link rel="apple-touch-icon" href={favicon} />
 	<title>SPNSS EOOD — Corporate Consulting, Mobile Apps & E-Commerce</title>
 	<meta
 		name="description"
