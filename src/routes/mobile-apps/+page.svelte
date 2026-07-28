@@ -13,7 +13,7 @@
 <section class="page-hero">
 	<div class="container">
 		<p class="eyebrow">Software</p>
-		<h1>Mobile applications</h1>
+		<h1>Mobile Applications</h1>
 		<p class="lead">Applications developed and published by SPNSS EOOD.</p>
 	</div>
 </section>
@@ -23,7 +23,7 @@
 		<h2>Activities</h2>
 		<div class="service-list">
 			<div class="service-item">
-				<h3>Application development</h3>
+				<h3>Application Development</h3>
 				<p>Product design and software development for mobile applications.</p>
 			</div>
 			<div class="service-item">
@@ -31,12 +31,12 @@
 				<p>App Store distribution under the SPNSS EOOD legal entity.</p>
 			</div>
 			<div class="service-item">
-				<h3>User support</h3>
+				<h3>User Support</h3>
 				<p>Technical support, privacy enquiries and data deletion requests.</p>
 			</div>
 			<nav class="page-actions" aria-label="Mobile application information">
 				<a class="btn btn-primary" href="{base}/contact">Contact</a>
-				<a href="{base}/privacy">Privacy policy →</a>
+				<a href="{base}/privacy">Privacy Policy →</a>
 			</nav>
 		</div>
 	</div>

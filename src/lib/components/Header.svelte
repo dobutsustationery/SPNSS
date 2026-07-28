@@ -16,7 +16,7 @@
 
 		<nav class="desktop-nav" aria-label="Main Navigation">
 			<a href="{base}/consulting-and-translation">Consulting & Translation</a>
-			<a href="{base}/mobile-apps">iOS Mobile Apps</a>
+			<a href="{base}/mobile-apps">Mobile Applications</a>
 			<a href="{base}/stationery">Dobutsu Stationery</a>
 			<a href="{base}/contact">Contact</a>
 		</nav>
@@ -55,9 +55,9 @@
 		<div class="mobile-nav-panel">
 			<a href="{base}/" onclick={toggleMenu}>Home Overview</a>
 			<a href="{base}/consulting-and-translation" onclick={toggleMenu}>Consulting & Translation</a>
-			<a href="{base}/mobile-apps" onclick={toggleMenu}>iOS Mobile Apps</a>
+			<a href="{base}/mobile-apps" onclick={toggleMenu}>Mobile Applications</a>
 			<a href="{base}/stationery" onclick={toggleMenu}>Dobutsu Stationery</a>
-			<a href="{base}/contact" onclick={toggleMenu}>Contact Info</a>
+			<a href="{base}/contact" onclick={toggleMenu}>Contact</a>
 			<a href="{base}/privacy" onclick={toggleMenu}>Privacy Policy</a>
 		</div>
 	{/if}

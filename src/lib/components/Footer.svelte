@@ -18,10 +18,10 @@
 			</div>
 
 			<div class="footer-nav-col">
-				<span class="footer-heading">Ventures</span>
+				<span class="footer-heading">Business Areas</span>
 				<ul>
-					<li><a href="{base}/consulting-and-translation">Advisory & Language</a></li>
-					<li><a href="{base}/mobile-apps">Mobile Products</a></li>
+					<li><a href="{base}/consulting-and-translation">Consulting & Translation</a></li>
+					<li><a href="{base}/mobile-apps">Mobile Applications</a></li>
 					<li><a href="{base}/stationery">Dobutsu Stationery</a></li>
 					<li>
 						<a href="https://dobutsustationery.com" target="_blank" rel="noopener noreferrer"
@@ -38,7 +38,7 @@
 				</p>
 				<ul>
 					<li><a href="{base}/contact">Contact</a></li>
-					<li><a href="{base}/privacy">Privacy</a></li>
+					<li><a href="{base}/privacy">Privacy Policy</a></li>
 				</ul>
 			</div>
 		</div>

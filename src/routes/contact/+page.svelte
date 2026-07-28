@@ -6,7 +6,7 @@
 <section class="page-hero">
 	<div class="container">
 		<p class="eyebrow">Contact</p>
-		<h1>Contact SPNSS</h1>
+		<h1>Contact</h1>
 	</div>
 </section>
 
