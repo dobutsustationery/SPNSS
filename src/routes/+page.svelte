@@ -4,7 +4,7 @@
 	const divisions = [
 		{
 			title: 'Consulting & translation',
-			services: 'Business advisory, Bulgarian–English translation and English instruction.',
+			services: 'Business advisory, translation services and English instruction.',
 			href: `${base}/consulting-and-translation`
 		},
 		{
