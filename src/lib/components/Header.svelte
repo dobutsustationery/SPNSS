@@ -22,14 +22,6 @@
 		</nav>
 
 		<div class="header-right">
-			<a
-				href="https://dobutsustationery.com"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="store-link"
-			>
-				Store ↗
-			</a>
 			<button class="mobile-toggle" onclick={toggleMenu} aria-label="Toggle menu">
 				<svg
 					width="22"
@@ -118,15 +110,6 @@
 
 	.desktop-nav a:hover {
 		color: var(--text-primary);
-	}
-
-	.store-link {
-		padding-bottom: 0.2rem;
-		border-bottom: 1px solid var(--text-primary);
-		font-size: 0.76rem;
-		font-weight: 650;
-		text-transform: uppercase;
-		letter-spacing: 0.06em;
 	}
 
 	.mobile-toggle {

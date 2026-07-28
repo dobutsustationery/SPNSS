@@ -14,7 +14,7 @@ As a visitor, I want to view SPNSS EOOD company information and business service
 - [x] Bulgaria is visible
 - [x] Consulting and Translation services are visible
 - [x] Mobile Application Engineering is visible
-- [x] Dobutsu Stationery section and link are visible
+- [x] Dobutsu Stationery business area is linked
 
 ## Company contact information
 
