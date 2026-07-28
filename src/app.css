@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
 
 :root {
 	--bg-main: #f2f0ea;
@@ -23,7 +23,6 @@
 	--shadow-subtle: none;
 	--shadow-hover: none;
 	--font-sans: 'DM Sans', Arial, sans-serif;
-	--font-serif: 'Newsreader', Georgia, serif;
 }
 
 *,
@@ -135,7 +134,7 @@ textarea {
 
 .page-hero h1 {
 	max-width: 850px;
-	font-family: var(--font-serif);
+	font-family: var(--font-sans);
 	font-size: clamp(3.2rem, 6vw, 5.4rem);
 	font-weight: 400;
 	letter-spacing: -0.05em;
@@ -160,7 +159,7 @@ textarea {
 }
 
 .content-grid h2 {
-	font-family: var(--font-serif);
+	font-family: var(--font-sans);
 	font-size: clamp(2.3rem, 4vw, 3.5rem);
 	font-weight: 400;
 	letter-spacing: -0.035em;
