@@ -32,7 +32,10 @@
 			</div>
 			<div class="service-item">
 				<h3>English instruction</h3>
-				<p>Individual and organisational instruction for professional English communication.</p>
+				<p>
+					English tuition services for individuals and groups with specialisation in Business
+					English and CEFR exams.
+				</p>
 			</div>
 			<nav class="page-actions" aria-label="Next steps">
 				<a class="btn btn-primary" href="{base}/contact">Service enquiry</a>
