@@ -22,56 +22,52 @@
 	<title>iOS App Support & Developer Portal — SPNSS EOOD</title>
 	<meta
 		name="description"
-		content="Official Apple App Store support portal for iOS mobile applications published by SPNSS EOOD. Technical support, FAQ, data deletion requests, and reviewer information."
+		content="Official Apple App Store support portal for iOS mobile applications published by SPNSS EOOD."
 	/>
 </svelte:head>
 
-<section class="support-header-section">
+<section class="support-header">
 	<div class="container">
-		<div class="header-badge">
-			<span class="apple-logo-icon"></span>
-			<span>Apple App Store Developer Support</span>
-		</div>
+		<span class="tag-label">Apple App Store Developer Portal</span>
 		<h1>iOS Mobile Application Support Hub</h1>
-		<p class="header-lead">
-			Official support and developer portal for mobile applications built and published by SPNSS
-			EOOD.
+		<p class="support-lead">
+			Official support, technical assistance, and data privacy portal for mobile applications
+			developed and published by SPNSS EOOD.
 		</p>
 	</div>
 </section>
 
-<section class="support-main-section">
+<section class="support-body">
 	<div class="container">
 		<div class="support-grid">
-			<!-- Left Column: Support Form & Information -->
-			<div class="support-content">
-				<div class="card support-card">
+			<!-- Main Column -->
+			<div class="support-main">
+				<div class="card form-card">
 					<h2>Submit a Technical Support Ticket</h2>
-					<p class="card-subtitle">
+					<p class="form-sub">
 						Experiencing an issue with one of our iOS apps? Our development team in Sofia, Bulgaria
-						is ready to help.
+						will assist you.
 					</p>
 
 					{#if ticketState.submitted}
-						<div class="ticket-success">
-							<span class="success-icon">✓</span>
-							<h3>Support Ticket Received!</h3>
+						<div class="ticket-feedback">
+							<h3>Support Ticket Registered</h3>
 							<p>
-								Thank you, {ticketState.name}. Ticket reference has been registered. Our iOS support
-								team will reply to <strong>{ticketState.email}</strong> within 24 business hours.
+								Thank you, {ticketState.name}. Our iOS support engineering team will reply to
+								<strong>{ticketState.email}</strong> within 24 business hours.
 							</p>
 							<button
 								onclick={() => (ticketState.submitted = false)}
 								class="btn btn-secondary mt-4"
 							>
-								Submit Another Ticket
+								Submit Another Request
 							</button>
 						</div>
 					{:else}
 						<form onsubmit={handleTicketSubmit} class="support-form">
 							<div class="form-row">
-								<div class="form-group">
-									<label for="appName">Application Name</label>
+								<div class="field-group">
+									<label for="appName">Application</label>
 									<select id="appName" bind:value={ticketState.appName}>
 										<option value="General iOS Application"
 											>General iOS Application / In-App Support</option
@@ -85,8 +81,8 @@
 										>
 									</select>
 								</div>
-								<div class="form-group">
-									<label for="issueType">Issue Category</label>
+								<div class="field-group">
+									<label for="issueType">Category</label>
 									<select id="issueType" bind:value={ticketState.issueType}>
 										<option value="Technical Issue">Technical Bug / Crash</option>
 										<option value="Feature Request">Feature Request</option>
@@ -97,7 +93,7 @@
 							</div>
 
 							<div class="form-row">
-								<div class="form-group">
+								<div class="field-group">
 									<label for="name">Your Name</label>
 									<input
 										type="text"
@@ -107,7 +103,7 @@
 										placeholder="Full Name"
 									/>
 								</div>
-								<div class="form-group">
+								<div class="field-group">
 									<label for="email">Contact Email</label>
 									<input
 										type="email"
@@ -119,14 +115,14 @@
 								</div>
 							</div>
 
-							<div class="form-group">
-								<label for="details">Describe the Issue or Inquiry</label>
+							<div class="field-group">
+								<label for="details">Inquiry Details</label>
 								<textarea
 									id="details"
 									bind:value={ticketState.details}
 									rows="5"
 									required
-									placeholder="Please provide details (iOS version, device model, steps to reproduce)..."
+									placeholder="Please describe the issue (iOS version, device model, steps to reproduce)..."
 								></textarea>
 							</div>
 
@@ -135,115 +131,97 @@
 					{/if}
 				</div>
 
-				<!-- App Store Reviewer & Legal Notice Card -->
-				<div class="card dev-notice-card">
-					<div class="notice-header">
-						<span class="notice-badge">Apple App Review Notice</span>
-						<h3>App Store Reviewer & Developer Identity</h3>
-					</div>
+				<!-- App Store Reviewer Notice -->
+				<div class="card notice-card">
+					<span class="tag-label">App Store Reviewer Notice</span>
+					<h3>Developer Identity & Review Guidelines</h3>
 					<p>
-						This support page serves as the official support destination URL required under Apple
-						App Store Review Guidelines. All applications developed under the SPNSS EOOD entity
-						adhere to strict quality, security, and privacy standards.
+						This page serves as the official support destination URL required under Apple App Store
+						Review Guidelines. Applications published under the SPNSS EOOD entity adhere to strict
+						software quality and user privacy standards.
 					</p>
-					<div class="dev-details-grid">
+					<div class="details-grid">
 						<div>
-							<strong>Legal Corporate Entity:</strong>
+							<span class="detail-label">Legal Corporate Entity</span>
 							<p>SPNSS EOOD</p>
 						</div>
 						<div>
-							<strong>Registered Address:</strong>
+							<span class="detail-label">Registered Address</span>
 							<p>4 Hristo Belchev St., Floor 1, Sofia 1000, Bulgaria</p>
 						</div>
 						<div>
-							<strong>Primary Developer Contact:</strong>
+							<span class="detail-label">Developer Support Contact</span>
 							<p><a href="mailto:support@spnss.com">support@spnss.com</a></p>
 						</div>
 						<div>
-							<strong>Target Response SLA:</strong>
+							<span class="detail-label">Support Response SLA</span>
 							<p>Within 24–48 Business Hours</p>
 						</div>
 					</div>
 				</div>
 
-				<!-- Data Deletion & Privacy Card -->
-				<div class="card data-deletion-card">
+				<!-- User Account & Data Deletion -->
+				<div class="card deletion-card">
 					<h3>User Account & Data Deletion Requests</h3>
 					<p>
-						In compliance with Apple App Store Guideline 5.1.1(v) and EU GDPR regulations, users
-						have the right to request deletion of their account data associated with any SPNSS EOOD
-						application.
+						In compliance with Apple App Store Guideline 5.1.1(v) and EU GDPR regulations, users may
+						request deletion of account data associated with any SPNSS EOOD application:
 					</p>
-					<div class="deletion-steps">
-						<ol>
-							<li>
-								Send an email to <a
-									href="mailto:support@spnss.com?subject=Data%20Deletion%20Request"
-									>support@spnss.com</a
-								>
-								with the subject line <code>Data Deletion Request</code>.
-							</li>
-							<li>Include your account username or registered email address used in the app.</li>
-							<li>
-								Our privacy team will process and permanently remove your data within 30 calendar
-								days and send confirmation upon completion.
-							</li>
-						</ol>
-					</div>
-					<div class="card-link-box">
-						<a href="{base}/privacy">Read our full Privacy Policy →</a>
-					</div>
+					<ol class="deletion-list">
+						<li>
+							Email <a href="mailto:support@spnss.com?subject=Data%20Deletion%20Request"
+								>support@spnss.com</a
+							>
+							with the subject line <code>Data Deletion Request</code>.
+						</li>
+						<li>Specify your account email or registered username in the application.</li>
+						<li>
+							Our privacy team will process and permanently remove your data within 30 days and send
+							confirmation upon completion.
+						</li>
+					</ol>
+					<a href="{base}/privacy" class="privacy-link">Read our full Privacy Policy &rarr;</a>
 				</div>
 			</div>
 
-			<!-- Right Column: Sidebar FAQ & Quick Links -->
+			<!-- Sidebar Column -->
 			<div class="support-sidebar">
 				<div class="card sidebar-card">
 					<h3>Frequently Asked Questions</h3>
 
-					<div class="faq-item">
-						<h4>How do I report a bug in an iOS app?</h4>
+					<div class="faq-block">
+						<h4>How do I report an iOS app issue?</h4>
 						<p>
-							Use the support ticket form on this page or send an email directly to <a
+							Submit a support ticket using the form on this page or email <a
 								href="mailto:support@spnss.com">support@spnss.com</a
-							> including your device model and iOS version.
+							> with your iOS version and device model.
 						</p>
 					</div>
 
-					<div class="faq-item">
-						<h4>What is the support response time?</h4>
+					<div class="faq-block">
+						<h4>What is the support response SLA?</h4>
 						<p>
-							Our engineering team in Sofia responds to all inquiries within 24–48 business hours.
+							Our team in Sofia responds to technical support inquiries within 24–48 business hours.
 						</p>
 					</div>
 
-					<div class="faq-item">
-						<h4>Where can I view the Privacy Policy?</h4>
-						<p>
-							You can read our comprehensive App Store & GDPR privacy policy on our <a
-								href="{base}/privacy">Privacy Policy Page</a
-							>.
-						</p>
-					</div>
-
-					<div class="faq-item">
+					<div class="faq-block">
 						<h4>How is my personal data handled?</h4>
 						<p>
-							We process minimal user data required for application functionality. We do not sell
-							user data to third parties.
+							We process minimal operational data required for application functionality and do not
+							sell user data. Review our <a href="{base}/privacy">Privacy Policy</a>.
 						</p>
 					</div>
 				</div>
 
-				<div class="card sidebar-card highlight-sidebar">
-					<h3>Other SPNSS EOOD Operations</h3>
-					<p>Looking for our other business divisions?</p>
-					<ul class="sidebar-links">
-						<li><a href="{base}/#services">Business Consulting & Advisory</a></li>
-						<li><a href="{base}/#services">Multilingual Translation & ESL Services</a></li>
+				<div class="card sidebar-card">
+					<h3>SPNSS EOOD Operations</h3>
+					<ul class="sidebar-nav">
+						<li><a href="{base}/#ventures">Management Consulting & Advisory</a></li>
+						<li><a href="{base}/#ventures">Translation & ESL Services</a></li>
 						<li>
 							<a href="https://dobutsustationery.com" target="_blank" rel="noopener noreferrer"
-								>Japanese Stationery Store ↗</a
+								>Dobutsu Stationery E-Commerce ↗</a
 							>
 						</li>
 					</ul>
@@ -254,64 +232,52 @@
 </section>
 
 <style>
-	.support-header-section {
-		background: linear-gradient(180deg, #f1f5f9 0%, #f8fafc 100%);
-		padding: 3.5rem 0 2.5rem;
-		border-bottom: 1px solid var(--border-color);
+	.support-header {
+		padding: 5rem 0 3.5rem;
+		border-bottom: 1px solid var(--border-light);
+		background-color: var(--bg-main);
 	}
 
-	.header-badge {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5rem;
-		padding: 0.35rem 0.85rem;
-		background-color: var(--brand-accent);
-		color: white;
-		border-radius: 9999px;
-		font-size: 0.85rem;
-		font-weight: 600;
-		margin-bottom: 1rem;
-	}
-
-	.support-header-section h1 {
-		font-family: var(--font-heading);
+	.support-header h1 {
 		font-size: 2.75rem;
 		font-weight: 800;
+		letter-spacing: -0.03em;
 		color: var(--text-primary);
 		margin-bottom: 0.75rem;
 	}
 
-	.header-lead {
-		font-size: 1.15rem;
+	.support-lead {
+		font-size: 1.1rem;
 		color: var(--text-secondary);
-		max-width: 750px;
+		max-width: 720px;
+		line-height: 1.6;
 	}
 
-	.support-main-section {
-		padding: 3.5rem 0;
+	.support-body {
+		padding: 4.5rem 0;
 	}
 
 	.support-grid {
 		display: grid;
 		grid-template-columns: 1.8fr 1fr;
-		gap: 2.5rem;
+		gap: 3rem;
 	}
 
-	.support-content {
+	.support-main {
 		display: flex;
 		flex-direction: column;
-		gap: 2rem;
+		gap: 2.25rem;
 	}
 
-	.support-card h2 {
-		font-family: var(--font-heading);
-		font-size: 1.6rem;
+	.form-card h2 {
+		font-size: 1.5rem;
+		font-weight: 700;
 		color: var(--text-primary);
 		margin-bottom: 0.35rem;
 	}
 
-	.card-subtitle {
-		font-size: 0.95rem;
+	.form-sub {
+		font-size: 0.92rem;
 		color: var(--text-secondary);
 		margin-bottom: 1.5rem;
 	}
@@ -328,135 +294,108 @@
 		gap: 1rem;
 	}
 
-	.form-group {
+	.field-group {
 		display: flex;
 		flex-direction: column;
 		gap: 0.4rem;
 	}
 
-	.form-group label {
+	.field-group label {
 		font-size: 0.85rem;
 		font-weight: 600;
 		color: var(--text-primary);
 	}
 
-	.form-group input,
-	.form-group select,
-	.form-group textarea {
+	.field-group input,
+	.field-group select,
+	.field-group textarea {
 		padding: 0.75rem 1rem;
-		border: 1px solid var(--border-color);
+		border: 1px solid var(--border-light);
 		border-radius: var(--radius-md);
 		font-family: var(--font-sans);
-		font-size: 0.95rem;
+		font-size: 0.92rem;
 		background-color: var(--bg-main);
 		color: var(--text-primary);
 	}
 
-	.form-group input:focus,
-	.form-group select:focus,
-	.form-group textarea:focus {
+	.field-group input:focus,
+	.field-group select:focus,
+	.field-group textarea:focus {
 		outline: none;
 		border-color: var(--border-focus);
-		box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 	}
 
-	.ticket-success {
-		text-align: center;
+	.ticket-feedback {
 		padding: 2rem;
+		text-align: center;
 	}
 
-	.success-icon {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		width: 50px;
-		height: 50px;
-		background-color: var(--brand-emerald);
-		color: white;
-		font-size: 1.5rem;
-		border-radius: 50%;
-		margin-bottom: 1rem;
-	}
-
-	.dev-notice-card {
-		background: linear-gradient(135deg, #ffffff 0%, #eff6ff 100%);
-		border-color: #bfdbfe;
-	}
-
-	.notice-header {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: 0.5rem;
-		margin-bottom: 1rem;
-	}
-
-	.notice-badge {
-		font-size: 0.75rem;
+	.ticket-feedback h3 {
+		font-size: 1.25rem;
 		font-weight: 700;
-		text-transform: uppercase;
-		background-color: #1e40af;
-		color: white;
-		padding: 0.2rem 0.6rem;
-		border-radius: 9999px;
+		margin-bottom: 0.5rem;
 	}
 
-	.dev-notice-card h3 {
-		font-family: var(--font-heading);
+	.notice-card h3 {
 		font-size: 1.3rem;
-		color: var(--text-primary);
+		font-weight: 700;
+		margin-bottom: 0.5rem;
 	}
 
-	.dev-details-grid {
+	.notice-card p {
+		font-size: 0.92rem;
+		color: var(--text-secondary);
+		line-height: 1.55;
+	}
+
+	.details-grid {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 1.25rem;
-		margin-top: 1.25rem;
-		padding-top: 1.25rem;
-		border-top: 1px solid var(--border-color);
+		margin-top: 1.5rem;
+		padding-top: 1.5rem;
+		border-top: 1px solid var(--border-light);
 	}
 
-	.dev-details-grid strong {
+	.detail-label {
 		display: block;
-		font-size: 0.85rem;
+		font-size: 0.75rem;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
 		color: var(--text-muted);
 		margin-bottom: 0.2rem;
 	}
 
-	.dev-details-grid p {
+	.details-grid p {
 		font-size: 0.9rem;
 		font-weight: 600;
 		color: var(--text-primary);
 	}
 
-	.data-deletion-card h3 {
-		font-family: var(--font-heading);
-		font-size: 1.3rem;
-		color: var(--text-primary);
+	.deletion-card h3 {
+		font-size: 1.25rem;
+		font-weight: 700;
 		margin-bottom: 0.75rem;
 	}
 
-	.deletion-steps {
-		background-color: var(--bg-main);
-		padding: 1.25rem 1.25rem 1.25rem 2rem;
-		border-radius: var(--radius-md);
-		border: 1px solid var(--border-color);
+	.deletion-list {
+		padding-left: 1.25rem;
 		margin: 1rem 0;
 	}
 
-	.deletion-steps li {
+	.deletion-list li {
 		font-size: 0.9rem;
 		color: var(--text-secondary);
-		margin-bottom: 0.5rem;
+		margin-bottom: 0.4rem;
 		line-height: 1.5;
 	}
 
-	.card-link-box {
-		font-size: 0.9rem;
+	.privacy-link {
+		font-size: 0.88rem;
 		font-weight: 600;
 	}
 
-	/* Sidebar */
 	.support-sidebar {
 		display: flex;
 		flex-direction: column;
@@ -464,47 +403,41 @@
 	}
 
 	.sidebar-card h3 {
-		font-family: var(--font-heading);
-		font-size: 1.25rem;
-		color: var(--text-primary);
+		font-size: 1.15rem;
+		font-weight: 700;
 		margin-bottom: 1.25rem;
-		padding-bottom: 0.75rem;
-		border-bottom: 1px solid var(--border-color);
+		padding-bottom: 0.5rem;
+		border-bottom: 1px solid var(--border-light);
 	}
 
-	.faq-item {
+	.faq-block {
 		margin-bottom: 1.25rem;
 	}
 
-	.faq-item h4 {
-		font-size: 0.95rem;
+	.faq-block h4 {
+		font-size: 0.92rem;
+		font-weight: 700;
 		color: var(--text-primary);
-		margin-bottom: 0.35rem;
+		margin-bottom: 0.25rem;
 	}
 
-	.faq-item p {
-		font-size: 0.88rem;
+	.faq-block p {
+		font-size: 0.85rem;
 		color: var(--text-secondary);
 		line-height: 1.45;
 	}
 
-	.highlight-sidebar {
-		background-color: #fff7ed;
-		border-color: #ffedd5;
-	}
-
-	.sidebar-links {
+	.sidebar-nav {
 		list-style: none;
 		display: flex;
 		flex-direction: column;
-		gap: 0.75rem;
-		margin-top: 1rem;
+		gap: 0.65rem;
 	}
 
-	.sidebar-links a {
-		font-size: 0.9rem;
+	.sidebar-nav a {
+		font-size: 0.88rem;
 		font-weight: 600;
-		color: var(--brand-amber);
+		color: var(--text-primary);
 	}
 
 	.mt-4 {
@@ -515,7 +448,6 @@
 		.support-grid {
 			grid-template-columns: 1fr;
 		}
-
 		.form-row {
 			grid-template-columns: 1fr;
 		}

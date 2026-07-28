@@ -8,66 +8,62 @@
 </script>
 
 <header class="site-header">
-	<div class="container header-content">
-		<a href="{base}/" class="brand-logo">
-			<span class="logo-box">SP</span>
-			<div class="logo-text">
-				<span class="logo-title">SPNSS EOOD</span>
-				<span class="logo-subtitle">Corporate & Technology Services</span>
-			</div>
+	<div class="container header-inner">
+		<a href="{base}/" class="brand-link">
+			<span class="brand-mark">SPNSS</span>
+			<span class="brand-sub">EOOD</span>
 		</a>
 
-		<nav class="desktop-nav" aria-label="Main navigation">
-			<a href="{base}/#services">Services</a>
-			<a href="{base}/#mobile-apps">Mobile Apps</a>
+		<nav class="desktop-nav" aria-label="Main Navigation">
+			<a href="{base}/#ventures">Ventures & Services</a>
+			<a href="{base}/#mobile-apps">iOS Mobile Apps</a>
 			<a
 				href="https://dobutsustationery.com"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="nav-ecommerce"
+				class="nav-ext-link"
 			>
-				<span class="nav-icon">🛒</span> Dobutsu Stationery
+				Dobutsu Stationery <span class="arrow-icon">↗</span>
 			</a>
 			<a href="{base}/app-support">App Support</a>
-			<a href="{base}/privacy">Privacy Policy</a>
+			<a href="{base}/privacy">Privacy</a>
 			<a href="{base}/terms">Terms</a>
-			<a href="{base}/#contact" class="btn btn-primary nav-contact-btn">Contact Us</a>
 		</nav>
 
-		<button class="mobile-toggle" onclick={toggleMenu} aria-label="Toggle Navigation Menu">
-			<svg
-				width="24"
-				height="24"
-				viewBox="0 0 24 24"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-			>
-				{#if isMenuOpen}
-					<line x1="18" y1="6" x2="6" y2="18"></line>
-					<line x1="6" y1="6" x2="18" y2="18"></line>
-				{:else}
-					<line x1="3" y1="12" x2="21" y2="12"></line>
-					<line x1="3" y1="6" x2="21" y2="6"></line>
-					<line x1="3" y1="18" x2="21" y2="18"></line>
-				{/if}
-			</svg>
-		</button>
+		<div class="header-right">
+			<a href="{base}/#contact" class="btn btn-primary nav-btn">Contact Us</a>
+			<button class="mobile-toggle" onclick={toggleMenu} aria-label="Toggle menu">
+				<svg
+					width="22"
+					height="22"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="1.5"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				>
+					{#if isMenuOpen}
+						<path d="M18 6L6 18M6 6l12 12" />
+					{:else}
+						<path d="M4 8h16M4 16h16" />
+					{/if}
+				</svg>
+			</button>
+		</div>
 	</div>
 
 	{#if isMenuOpen}
-		<div class="mobile-menu">
-			<a href="{base}/#services" onclick={toggleMenu}>Services</a>
-			<a href="{base}/#mobile-apps" onclick={toggleMenu}>Mobile Apps</a>
+		<div class="mobile-nav-panel">
+			<a href="{base}/#ventures" onclick={toggleMenu}>Ventures & Services</a>
+			<a href="{base}/#mobile-apps" onclick={toggleMenu}>iOS Mobile Apps</a>
 			<a
 				href="https://dobutsustationery.com"
 				target="_blank"
 				rel="noopener noreferrer"
 				onclick={toggleMenu}
 			>
-				🛒 Dobutsu Stationery
+				Dobutsu Stationery ↗
 			</a>
 			<a href="{base}/app-support" onclick={toggleMenu}>App Support</a>
 			<a href="{base}/privacy" onclick={toggleMenu}>Privacy Policy</a>
@@ -83,99 +79,72 @@
 		top: 0;
 		z-index: 100;
 		background-color: var(--bg-nav);
-		backdrop-filter: blur(12px);
-		-webkit-backdrop-filter: blur(12px);
-		border-bottom: 1px solid var(--border-color);
-		transition: all 0.3s ease;
+		backdrop-filter: blur(16px);
+		-webkit-backdrop-filter: blur(16px);
+		border-bottom: 1px solid var(--border-light);
 	}
 
-	.header-content {
+	.header-inner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		height: 80px;
+		height: 84px;
 	}
 
-	.brand-logo {
+	.brand-link {
 		display: flex;
-		align-items: center;
-		gap: 0.75rem;
-		text-decoration: none;
-		color: var(--text-primary);
+		align-items: baseline;
+		gap: 0.4rem;
 	}
 
-	.logo-box {
-		width: 42px;
-		height: 42px;
-		background: linear-gradient(135deg, var(--brand-primary), var(--brand-accent));
-		color: white;
-		font-family: var(--font-heading);
+	.brand-mark {
+		font-family: var(--font-sans);
 		font-weight: 800;
-		font-size: 1.1rem;
-		border-radius: 10px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		box-shadow: 0 4px 10px rgba(30, 64, 175, 0.2);
-	}
-
-	.logo-text {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.logo-title {
-		font-family: var(--font-heading);
-		font-weight: 700;
-		font-size: 1.15rem;
-		letter-spacing: -0.01em;
+		font-size: 1.35rem;
+		letter-spacing: -0.03em;
 		color: var(--text-primary);
-		line-height: 1.2;
 	}
 
-	.logo-subtitle {
+	.brand-sub {
 		font-size: 0.75rem;
+		font-weight: 600;
+		letter-spacing: 0.12em;
 		color: var(--text-muted);
-		font-weight: 500;
+		text-transform: uppercase;
 	}
 
 	.desktop-nav {
 		display: flex;
 		align-items: center;
-		gap: 1.75rem;
+		gap: 2.25rem;
 	}
 
 	.desktop-nav a {
+		font-size: 0.88rem;
 		font-weight: 500;
-		font-size: 0.95rem;
 		color: var(--text-secondary);
-		transition: color 0.2s ease;
+		letter-spacing: -0.01em;
+		position: relative;
 	}
 
 	.desktop-nav a:hover {
-		color: var(--brand-primary);
+		color: var(--text-primary);
 	}
 
-	.nav-ecommerce {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.35rem;
-		padding: 0.4rem 0.8rem;
-		background-color: #fff7ed;
-		border: 1px solid #ffedd5;
-		border-radius: 20px;
-		color: var(--brand-amber) !important;
+	.nav-ext-link {
+		color: var(--text-primary) !important;
 		font-weight: 600 !important;
 	}
 
-	.nav-ecommerce:hover {
-		background-color: #ffedd5;
-		color: #c2410c !important;
+	.arrow-icon {
+		font-size: 0.8rem;
+		opacity: 0.7;
 	}
 
-	.nav-contact-btn {
-		padding: 0.5rem 1.2rem;
-		font-size: 0.9rem;
+	.nav-btn {
+		padding: 0.6rem 1.2rem;
+		font-size: 0.85rem;
+		border-radius: 6px;
 	}
 
 	.mobile-toggle {
@@ -184,22 +153,22 @@
 		border: none;
 		color: var(--text-primary);
 		cursor: pointer;
-		padding: 0.5rem;
+		padding: 0.4rem;
 	}
 
-	.mobile-menu {
+	.mobile-nav-panel {
 		display: flex;
 		flex-direction: column;
-		padding: 1.5rem;
+		padding: 1.5rem 2rem;
 		background-color: var(--bg-card);
-		border-bottom: 1px solid var(--border-color);
-		gap: 1rem;
+		border-bottom: 1px solid var(--border-light);
+		gap: 1.2rem;
 	}
 
-	.mobile-menu a {
+	.mobile-nav-panel a {
+		font-size: 0.95rem;
 		font-weight: 500;
 		color: var(--text-primary);
-		padding: 0.5rem 0;
 	}
 
 	@media (max-width: 960px) {

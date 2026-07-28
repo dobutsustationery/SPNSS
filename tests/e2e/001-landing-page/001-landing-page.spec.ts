@@ -20,15 +20,17 @@ test('Landing page renders correctly', async ({ page }, testInfo) => {
 			{
 				spec: 'Address is visible',
 				check: async () =>
-					await expect(page.locator('.legal-address')).toContainText('4 Hristo Belchev St.')
+					await expect(page.locator('.legal-address').first()).toContainText('4 Hristo Belchev St.')
 			},
 			{
 				spec: 'City and country are visible',
-				check: async () => await expect(page.locator('.legal-address')).toContainText('Sofia 1000')
+				check: async () =>
+					await expect(page.locator('.legal-address').first()).toContainText('Sofia 1000')
 			},
 			{
 				spec: 'Bulgaria is visible',
-				check: async () => await expect(page.locator('.legal-address')).toContainText('Bulgaria')
+				check: async () =>
+					await expect(page.locator('.legal-address').first()).toContainText('Bulgaria')
 			},
 			{
 				spec: 'Consulting and Translation services are visible',
@@ -36,9 +38,9 @@ test('Landing page renders correctly', async ({ page }, testInfo) => {
 					await expect(page.locator('h3:has-text("Consulting, Translation & ESL")')).toBeVisible()
 			},
 			{
-				spec: 'Mobile Application Development is visible',
+				spec: 'Mobile Application Engineering is visible',
 				check: async () =>
-					await expect(page.locator('h3:has-text("Mobile Application Development")')).toBeVisible()
+					await expect(page.locator('h3:has-text("Mobile Application Engineering")')).toBeVisible()
 			},
 			{
 				spec: 'Dobutsu Stationery section and link are visible',
