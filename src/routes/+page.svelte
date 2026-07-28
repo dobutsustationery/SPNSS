@@ -35,8 +35,8 @@
 			<h1>Services, software and specialist retail.</h1>
 		</div>
 		<p class="summary">
-			SPNSS EOOD is a Bulgarian company providing consulting and language services, publishing
-			mobile applications, and operating Dobutsu Stationery.
+			SPNSS EOOD is based in Sofia, Bulgaria and offers consulting and language services, mobile
+			applications, and specialised e-commerce.
 		</p>
 	</div>
 </section>
