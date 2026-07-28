@@ -15,23 +15,22 @@
 		</a>
 
 		<nav class="desktop-nav" aria-label="Main Navigation">
-			<a href="{base}/#ventures">Ventures & Services</a>
-			<a href="{base}/#mobile-apps">iOS Mobile Apps</a>
+			<a href="{base}/consulting-and-translation">Consulting & Translation</a>
+			<a href="{base}/mobile-apps">iOS Mobile Apps</a>
+			<a href="{base}/stationery">Dobutsu Stationery</a>
+			<a href="{base}/app-support">App Support</a>
+			<a href="{base}/contact">Contact</a>
+		</nav>
+
+		<div class="header-right">
 			<a
 				href="https://dobutsustationery.com"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="nav-ext-link"
+				class="store-link"
 			>
-				Dobutsu Stationery <span class="arrow-icon">↗</span>
+				Store ↗
 			</a>
-			<a href="{base}/app-support">App Support</a>
-			<a href="{base}/privacy">Privacy</a>
-			<a href="{base}/terms">Terms</a>
-		</nav>
-
-		<div class="header-right">
-			<a href="{base}/#contact" class="btn btn-primary nav-btn">Contact Us</a>
 			<button class="mobile-toggle" onclick={toggleMenu} aria-label="Toggle menu">
 				<svg
 					width="22"
@@ -55,20 +54,14 @@
 
 	{#if isMenuOpen}
 		<div class="mobile-nav-panel">
-			<a href="{base}/#ventures" onclick={toggleMenu}>Ventures & Services</a>
-			<a href="{base}/#mobile-apps" onclick={toggleMenu}>iOS Mobile Apps</a>
-			<a
-				href="https://dobutsustationery.com"
-				target="_blank"
-				rel="noopener noreferrer"
-				onclick={toggleMenu}
-			>
-				Dobutsu Stationery ↗
-			</a>
+			<a href="{base}/" onclick={toggleMenu}>Home Overview</a>
+			<a href="{base}/consulting-and-translation" onclick={toggleMenu}>Consulting & Translation</a>
+			<a href="{base}/mobile-apps" onclick={toggleMenu}>iOS Mobile Apps</a>
+			<a href="{base}/stationery" onclick={toggleMenu}>Dobutsu Stationery</a>
 			<a href="{base}/app-support" onclick={toggleMenu}>App Support</a>
+			<a href="{base}/contact" onclick={toggleMenu}>Contact Info</a>
 			<a href="{base}/privacy" onclick={toggleMenu}>Privacy Policy</a>
 			<a href="{base}/terms" onclick={toggleMenu}>Terms of Service</a>
-			<a href="{base}/#contact" class="btn btn-primary" onclick={toggleMenu}>Contact Us</a>
 		</div>
 	{/if}
 </header>
@@ -79,8 +72,8 @@
 		top: 0;
 		z-index: 100;
 		background-color: var(--bg-nav);
-		backdrop-filter: blur(16px);
-		-webkit-backdrop-filter: blur(16px);
+		backdrop-filter: blur(12px);
+		-webkit-backdrop-filter: blur(12px);
 		border-bottom: 1px solid var(--border-light);
 	}
 
@@ -88,7 +81,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		height: 84px;
+		height: 76px;
 	}
 
 	.brand-link {
@@ -99,9 +92,9 @@
 
 	.brand-mark {
 		font-family: var(--font-sans);
-		font-weight: 800;
-		font-size: 1.35rem;
-		letter-spacing: -0.03em;
+		font-weight: 700;
+		font-size: 1.15rem;
+		letter-spacing: -0.02em;
 		color: var(--text-primary);
 	}
 
@@ -116,35 +109,27 @@
 	.desktop-nav {
 		display: flex;
 		align-items: center;
-		gap: 2.25rem;
+		gap: 1.5rem;
 	}
 
 	.desktop-nav a {
-		font-size: 0.88rem;
+		font-size: 0.78rem;
 		font-weight: 500;
 		color: var(--text-secondary);
 		letter-spacing: -0.01em;
-		position: relative;
 	}
 
 	.desktop-nav a:hover {
 		color: var(--text-primary);
 	}
 
-	.nav-ext-link {
-		color: var(--text-primary) !important;
-		font-weight: 600 !important;
-	}
-
-	.arrow-icon {
-		font-size: 0.8rem;
-		opacity: 0.7;
-	}
-
-	.nav-btn {
-		padding: 0.6rem 1.2rem;
-		font-size: 0.85rem;
-		border-radius: 6px;
+	.store-link {
+		padding-bottom: 0.2rem;
+		border-bottom: 1px solid var(--text-primary);
+		font-size: 0.76rem;
+		font-weight: 650;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
 	}
 
 	.mobile-toggle {
@@ -162,7 +147,7 @@
 		padding: 1.5rem 2rem;
 		background-color: var(--bg-card);
 		border-bottom: 1px solid var(--border-light);
-		gap: 1.2rem;
+		gap: 1rem;
 	}
 
 	.mobile-nav-panel a {

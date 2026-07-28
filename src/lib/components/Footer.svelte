@@ -8,8 +8,8 @@
 			<div class="footer-brand-col">
 				<div class="brand-title">SPNSS EOOD</div>
 				<p class="brand-desc">
-					European corporate consulting, language translation & ESL instruction, mobile app
-					development studio, and operator of Japanese stationery e-commerce.
+					An independent Sofia company working across professional services, mobile products and
+					specialist retail.
 				</p>
 				<address class="company-address">
 					4 Hristo Belchev St., Floor 1<br />
@@ -20,9 +20,9 @@
 			<div class="footer-nav-col">
 				<span class="footer-heading">Ventures</span>
 				<ul>
-					<li><a href="{base}/#ventures">Management Consulting</a></li>
-					<li><a href="{base}/#ventures">Translation & ESL Services</a></li>
-					<li><a href="{base}/#mobile-apps">iOS App Development</a></li>
+					<li><a href="{base}/consulting-and-translation">Advisory & Language</a></li>
+					<li><a href="{base}/mobile-apps">Mobile Products</a></li>
+					<li><a href="{base}/stationery">Dobutsu Stationery</a></li>
 					<li>
 						<a href="https://dobutsustationery.com" target="_blank" rel="noopener noreferrer"
 							>Dobutsu Stationery ↗</a
@@ -37,15 +37,14 @@
 					<li><a href="{base}/app-support">iOS App Support Portal</a></li>
 					<li><a href="{base}/privacy">Privacy Policy</a></li>
 					<li><a href="{base}/terms">Terms of Service</a></li>
-					<li><a href="{base}/#contact">Contact Support</a></li>
+					<li><a href="{base}/contact">Contact</a></li>
 				</ul>
 			</div>
 
 			<div class="footer-nav-col">
-				<span class="footer-heading">Apple Developer Status</span>
+				<span class="footer-heading">Company</span>
 				<p class="apple-dev-text">
-					Registered corporate developer entity publishing mobile software applications on the Apple
-					App Store.
+					SPNSS EOOD<br />Registered in Sofia, Bulgaria
 				</p>
 				<p class="contact-email">
 					Support: <a href="mailto:support@spnss.com">support@spnss.com</a>
@@ -66,23 +65,23 @@
 
 <style>
 	.site-footer {
-		background-color: #ffffff;
+		background-color: var(--bg-card);
 		border-top: 1px solid var(--border-light);
-		padding: 4.5rem 0 2.5rem;
+		padding: 4.5rem 0 2rem;
 		margin-top: auto;
 	}
 
 	.footer-top {
 		display: grid;
-		grid-template-columns: 2fr 1fr 1fr 1.25fr;
+		grid-template-columns: 1.6fr 1fr 1fr 1fr;
 		gap: 3.5rem;
 		margin-bottom: 4rem;
 	}
 
 	.brand-title {
 		font-family: var(--font-sans);
-		font-weight: 800;
-		font-size: 1.25rem;
+		font-weight: 700;
+		font-size: 1.1rem;
 		letter-spacing: -0.02em;
 		color: var(--text-primary);
 		margin-bottom: 0.75rem;

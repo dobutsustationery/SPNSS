@@ -15,32 +15,32 @@ test('Landing page renders correctly', async ({ page }, testInfo) => {
 		verifications: [
 			{
 				spec: 'Company name is visible',
-				check: async () => await expect(page.locator('h1.hero-title')).toContainText('SPNSS EOOD')
+				check: async () => await expect(page.locator('header .brand-mark')).toContainText('SPNSS')
 			},
 			{
 				spec: 'Address is visible',
 				check: async () =>
-					await expect(page.locator('.legal-address').first()).toContainText('4 Hristo Belchev St.')
+					await expect(page.locator('footer address').first()).toContainText('4 Hristo Belchev St.')
 			},
 			{
 				spec: 'City and country are visible',
 				check: async () =>
-					await expect(page.locator('.legal-address').first()).toContainText('Sofia 1000')
+					await expect(page.locator('footer address').first()).toContainText('Sofia 1000')
 			},
 			{
 				spec: 'Bulgaria is visible',
 				check: async () =>
-					await expect(page.locator('.legal-address').first()).toContainText('Bulgaria')
+					await expect(page.locator('footer address').first()).toContainText('Bulgaria')
 			},
 			{
 				spec: 'Consulting and Translation services are visible',
 				check: async () =>
-					await expect(page.locator('h3:has-text("Consulting, Translation & ESL")')).toBeVisible()
+					await expect(page.locator('h3:has-text("Advisory & language services")')).toBeVisible()
 			},
 			{
 				spec: 'Mobile Application Engineering is visible',
 				check: async () =>
-					await expect(page.locator('h3:has-text("Mobile Application Engineering")')).toBeVisible()
+					await expect(page.locator('h3:has-text("Mobile products")')).toBeVisible()
 			},
 			{
 				spec: 'Dobutsu Stationery section and link are visible',
@@ -48,9 +48,9 @@ test('Landing page renders correctly', async ({ page }, testInfo) => {
 					await expect(page.locator('a[href*="dobutsustationery.com"]').first()).toBeVisible()
 			},
 			{
-				spec: 'Apple Developer compliance section is visible',
+				spec: 'Mobile app support is linked',
 				check: async () =>
-					await expect(page.locator('text=Apple Developer Account Verification')).toBeVisible()
+					await expect(page.locator('a[href$="/app-support"]').first()).toBeVisible()
 			}
 		]
 	});

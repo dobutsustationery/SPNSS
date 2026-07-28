@@ -1,21 +1,5 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-
-	let ticketState = $state({
-		appName: 'General iOS Application',
-		name: '',
-		email: '',
-		issueType: 'Technical Issue',
-		details: '',
-		submitted: false
-	});
-
-	function handleTicketSubmit(e: Event) {
-		e.preventDefault();
-		if (ticketState.name && ticketState.email && ticketState.details) {
-			ticketState.submitted = true;
-		}
-	}
 </script>
 
 <svelte:head>
@@ -43,92 +27,16 @@
 			<!-- Main Column -->
 			<div class="support-main">
 				<div class="card form-card">
-					<h2>Submit a Technical Support Ticket</h2>
+					<h2>Contact Mobile App Support</h2>
 					<p class="form-sub">
-						Experiencing an issue with one of our iOS apps? Our development team in Sofia, Bulgaria
-						will assist you.
+						Email our support team with the application name, your device model, iOS version and a
+						short description of the issue.
 					</p>
-
-					{#if ticketState.submitted}
-						<div class="ticket-feedback">
-							<h3>Support Ticket Registered</h3>
-							<p>
-								Thank you, {ticketState.name}. Our iOS support engineering team will reply to
-								<strong>{ticketState.email}</strong> within 24 business hours.
-							</p>
-							<button
-								onclick={() => (ticketState.submitted = false)}
-								class="btn btn-secondary mt-4"
-							>
-								Submit Another Request
-							</button>
-						</div>
-					{:else}
-						<form onsubmit={handleTicketSubmit} class="support-form">
-							<div class="form-row">
-								<div class="field-group">
-									<label for="appName">Application</label>
-									<select id="appName" bind:value={ticketState.appName}>
-										<option value="General iOS Application"
-											>General iOS Application / In-App Support</option
-										>
-										<option value="Dobutsu Stationery Mobile"
-											>Dobutsu Stationery iOS Companion</option
-										>
-										<option value="SPNSS ESL Learning">SPNSS ESL Interactive Learning</option>
-										<option value="SPNSS Business Utility"
-											>SPNSS Corporate Consulting Utility</option
-										>
-									</select>
-								</div>
-								<div class="field-group">
-									<label for="issueType">Category</label>
-									<select id="issueType" bind:value={ticketState.issueType}>
-										<option value="Technical Issue">Technical Bug / Crash</option>
-										<option value="Feature Request">Feature Request</option>
-										<option value="Account & Data">Account & Data Request</option>
-										<option value="Billing">In-App Purchase / Billing Inquiry</option>
-									</select>
-								</div>
-							</div>
-
-							<div class="form-row">
-								<div class="field-group">
-									<label for="name">Your Name</label>
-									<input
-										type="text"
-										id="name"
-										bind:value={ticketState.name}
-										required
-										placeholder="Full Name"
-									/>
-								</div>
-								<div class="field-group">
-									<label for="email">Contact Email</label>
-									<input
-										type="email"
-										id="email"
-										bind:value={ticketState.email}
-										required
-										placeholder="user@example.com"
-									/>
-								</div>
-							</div>
-
-							<div class="field-group">
-								<label for="details">Inquiry Details</label>
-								<textarea
-									id="details"
-									bind:value={ticketState.details}
-									rows="5"
-									required
-									placeholder="Please describe the issue (iOS version, device model, steps to reproduce)..."
-								></textarea>
-							</div>
-
-							<button type="submit" class="btn btn-primary">Submit Support Ticket</button>
-						</form>
-					{/if}
+					<a
+						class="btn btn-primary"
+						href="mailto:support@spnss.com?subject=Mobile%20app%20support%20request"
+						>Email support@spnss.com</a
+					>
 				</div>
 
 				<!-- App Store Reviewer Notice -->
@@ -217,8 +125,9 @@
 				<div class="card sidebar-card">
 					<h3>SPNSS EOOD Operations</h3>
 					<ul class="sidebar-nav">
-						<li><a href="{base}/#ventures">Management Consulting & Advisory</a></li>
-						<li><a href="{base}/#ventures">Translation & ESL Services</a></li>
+						<li>
+							<a href="{base}/consulting-and-translation">Advisory & Language Services</a>
+						</li>
 						<li>
 							<a href="https://dobutsustationery.com" target="_blank" rel="noopener noreferrer"
 								>Dobutsu Stationery E-Commerce ↗</a
@@ -280,60 +189,6 @@
 		font-size: 0.92rem;
 		color: var(--text-secondary);
 		margin-bottom: 1.5rem;
-	}
-
-	.support-form {
-		display: flex;
-		flex-direction: column;
-		gap: 1.25rem;
-	}
-
-	.form-row {
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		gap: 1rem;
-	}
-
-	.field-group {
-		display: flex;
-		flex-direction: column;
-		gap: 0.4rem;
-	}
-
-	.field-group label {
-		font-size: 0.85rem;
-		font-weight: 600;
-		color: var(--text-primary);
-	}
-
-	.field-group input,
-	.field-group select,
-	.field-group textarea {
-		padding: 0.75rem 1rem;
-		border: 1px solid var(--border-light);
-		border-radius: var(--radius-md);
-		font-family: var(--font-sans);
-		font-size: 0.92rem;
-		background-color: var(--bg-main);
-		color: var(--text-primary);
-	}
-
-	.field-group input:focus,
-	.field-group select:focus,
-	.field-group textarea:focus {
-		outline: none;
-		border-color: var(--border-focus);
-	}
-
-	.ticket-feedback {
-		padding: 2rem;
-		text-align: center;
-	}
-
-	.ticket-feedback h3 {
-		font-size: 1.25rem;
-		font-weight: 700;
-		margin-bottom: 0.5rem;
 	}
 
 	.notice-card h3 {
@@ -440,15 +295,8 @@
 		color: var(--text-primary);
 	}
 
-	.mt-4 {
-		margin-top: 1rem;
-	}
-
 	@media (max-width: 900px) {
 		.support-grid {
-			grid-template-columns: 1fr;
-		}
-		.form-row {
 			grid-template-columns: 1fr;
 		}
 	}
