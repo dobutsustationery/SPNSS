@@ -23,7 +23,9 @@
 			<p class="label">Registered office</p>
 			<strong>SPNSS EOOD</strong><br />
 			4 Hristo Belchev St., Floor 1<br />
-			Sofia 1000, Bulgaria
+			Sofia 1000, Bulgaria<br />
+			Telephone Number: <a href="tel:+359876771135">+359876771135</a><br />
+			VAT Number: BG205669335
 		</address>
 	</div>
 </section>
