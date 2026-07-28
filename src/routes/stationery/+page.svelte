@@ -6,7 +6,7 @@
 	<title>Dobutsu Stationery — SPNSS EOOD</title>
 	<meta
 		name="description"
-		content="Dobutsu Stationery, the Japanese stationery retailer operated by SPNSS EOOD."
+		content="Dobutsu Stationery sells Japanese pens, markers, stickers and paper goods imported from Japan and dispatched from Europe."
 	/>
 </svelte:head>
 
@@ -14,7 +14,10 @@
 	<div class="container">
 		<p class="eyebrow">Retail</p>
 		<h1>Dobutsu Stationery</h1>
-		<p class="lead">Japanese stationery retail operated by SPNSS EOOD.</p>
+		<p class="lead">
+			An online shop for Japanese stationery. Products are imported from Japan and dispatched from
+			Europe.
+		</p>
 	</div>
 </section>
 
@@ -23,16 +26,16 @@
 		<h2>Product Range</h2>
 		<div class="service-list">
 			<div class="service-item">
-				<h3>Writing Instruments</h3>
-				<p>Pens, pencils, inks and related accessories from Japanese manufacturers.</p>
+				<h3>Pens & Markers</h3>
+				<p>Japanese pens, fineliners, markers and writing sets.</p>
 			</div>
 			<div class="service-item">
-				<h3>Paper Products</h3>
-				<p>Notebooks, loose-leaf paper, planners and correspondence goods.</p>
+				<h3>Stickers & Paper Goods</h3>
+				<p>Stickers, memo pads, cards and decorative paper.</p>
 			</div>
 			<div class="service-item">
-				<h3>Desk Goods</h3>
-				<p>Tools, storage and accessories for writing and office use.</p>
+				<h3>Journalling & Correspondence</h3>
+				<p>Materials for journalling and collage, together with Japanese letter sets.</p>
 			</div>
 			<nav class="page-actions" aria-label="Dobutsu Stationery links">
 				<a
