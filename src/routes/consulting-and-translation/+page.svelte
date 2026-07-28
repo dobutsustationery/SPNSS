@@ -6,7 +6,7 @@
 	<title>Consulting & Translation — SPNSS EOOD</title>
 	<meta
 		name="description"
-		content="Business consulting, Bulgarian–English translation and English instruction from SPNSS EOOD."
+		content="Business consulting, translation and English instruction from SPNSS EOOD."
 	/>
 </svelte:head>
 
@@ -28,7 +28,7 @@
 			</div>
 			<div class="service-item">
 				<h3>Translation</h3>
-				<p>Bulgarian–English translation and review for business and general materials.</p>
+				<p>Translation and review for business, medical, legal, tourism and general materials.</p>
 			</div>
 			<div class="service-item">
 				<h3>English instruction</h3>
