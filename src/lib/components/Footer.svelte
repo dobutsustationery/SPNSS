@@ -23,11 +23,6 @@
 					<li><a href="{base}/consulting-and-translation">Consulting & Translation</a></li>
 					<li><a href="{base}/mobile-apps">Mobile Applications</a></li>
 					<li><a href="{base}/stationery">Dobutsu Stationery</a></li>
-					<li>
-						<a href="https://dobutsustationery.com" target="_blank" rel="noopener noreferrer"
-							>Dobutsu Stationery ↗</a
-						>
-					</li>
 				</ul>
 			</div>
 
