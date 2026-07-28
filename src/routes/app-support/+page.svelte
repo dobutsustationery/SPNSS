@@ -15,8 +15,8 @@
 		<span class="tag-label">Apple App Store Developer Portal</span>
 		<h1>iOS Mobile Application Support Hub</h1>
 		<p class="support-lead">
-			Official support, technical assistance, and data privacy portal for mobile applications
-			developed and published by SPNSS EOOD.
+			Technical support and data request information for mobile applications published by SPNSS
+			EOOD.
 		</p>
 	</div>
 </section>
@@ -44,9 +44,8 @@
 					<span class="tag-label">App Store Reviewer Notice</span>
 					<h3>Developer Identity & Review Guidelines</h3>
 					<p>
-						This page serves as the official support destination URL required under Apple App Store
-						Review Guidelines. Applications published under the SPNSS EOOD entity adhere to strict
-						software quality and user privacy standards.
+						This is the support destination for applications published on the App Store by SPNSS
+						EOOD.
 					</p>
 					<div class="details-grid">
 						<div>

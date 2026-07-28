@@ -6,68 +6,59 @@
 	<title>Dobutsu Stationery — SPNSS EOOD</title>
 	<meta
 		name="description"
-		content="Dobutsu Stationery, the Japanese stationery retail business operated by SPNSS EOOD."
+		content="Dobutsu Stationery, the Japanese stationery retailer operated by SPNSS EOOD."
 	/>
 </svelte:head>
 
 <section class="page-hero">
 	<div class="container">
-		<p class="eyebrow">Specialist retail</p>
-		<h1>Good tools make everyday work better.</h1>
-		<p class="lead">
-			Dobutsu Stationery is our independent store for Japanese pens, paper and desk goods chosen for
-			the pleasure and utility they bring to daily life.
-		</p>
+		<p class="eyebrow">Retail</p>
+		<h1>Dobutsu Stationery</h1>
+		<p class="lead">Japanese stationery retail operated by SPNSS EOOD.</p>
 	</div>
 </section>
 
-<section class="content-section">
+<section class="content-section compact">
 	<div class="container content-grid">
-		<div>
-			<p class="eyebrow">Dobutsu Stationery</p>
-			<h2>A focused store with a point of view.</h2>
-		</div>
-		<div>
-			<div class="service-list">
-				<div class="service-item">
-					<h3>Selected in Japan</h3>
-					<p>
-						A changing edit of writing instruments, notebooks, paper and practical desk objects from
-						established and lesser-known Japanese makers.
-					</p>
-				</div>
-				<div class="service-item">
-					<h3>Chosen for use</h3>
-					<p>
-						We value materials, function and lasting design over novelty. Every product should feel
-						good to own and useful to keep.
-					</p>
-				</div>
-				<div class="service-item">
-					<h3>Operated by SPNSS EOOD</h3>
-					<p>
-						Dobutsu Stationery is a distinct retail brand operated as part of the SPNSS portfolio.
-					</p>
-				</div>
+		<h2>Product range</h2>
+		<div class="service-list">
+			<div class="service-item">
+				<h3>Writing instruments</h3>
+				<p>Pens, pencils, inks and related accessories from Japanese manufacturers.</p>
 			</div>
-			<div class="links">
+			<div class="service-item">
+				<h3>Paper products</h3>
+				<p>Notebooks, loose-leaf paper, planners and correspondence goods.</p>
+			</div>
+			<div class="service-item">
+				<h3>Desk goods</h3>
+				<p>Tools, storage and accessories for writing and office use.</p>
+			</div>
+			<nav class="page-actions" aria-label="Dobutsu Stationery links">
 				<a
 					class="btn btn-primary"
 					href="https://dobutsustationery.com"
 					target="_blank"
 					rel="noopener noreferrer">Visit the store ↗</a
 				>
-				<a class="btn btn-secondary" href="{base}/contact">Retail enquiries</a>
-			</div>
+				<a href="{base}/contact">Company contact →</a>
+			</nav>
 		</div>
 	</div>
 </section>
 
 <style>
-	.links {
+	.compact {
+		padding-top: 3.5rem;
+	}
+
+	.page-actions {
 		display: flex;
-		gap: 0.75rem;
-		flex-wrap: wrap;
-		padding-top: 2.5rem;
+		align-items: center;
+		justify-content: space-between;
+		gap: 1.5rem;
+		padding-top: 2rem;
+		font-size: 0.82rem;
+		font-weight: 650;
 	}
 </style>

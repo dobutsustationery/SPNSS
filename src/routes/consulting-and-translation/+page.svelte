@@ -3,73 +3,57 @@
 </script>
 
 <svelte:head>
-	<title>Advisory & Language Services — SPNSS EOOD</title>
+	<title>Consulting & Translation — SPNSS EOOD</title>
 	<meta
 		name="description"
-		content="Business consulting, Bulgarian and English translation, and English-language instruction from SPNSS EOOD."
+		content="Business consulting, Bulgarian–English translation and English instruction from SPNSS EOOD."
 	/>
 </svelte:head>
 
 <section class="page-hero">
 	<div class="container">
 		<p class="eyebrow">Professional services</p>
-		<h1>Clarity across business and language.</h1>
-		<p class="lead">
-			Focused support for organisations and individuals navigating international work, communication
-			and change.
-		</p>
+		<h1>Consulting & translation</h1>
+		<p class="lead">Services for companies, organisations and individual professionals.</p>
 	</div>
 </section>
 
-<section class="content-section">
+<section class="content-section compact">
 	<div class="container content-grid">
-		<div>
-			<p class="eyebrow">Capabilities</p>
-			<h2>Useful expertise, shaped around the brief.</h2>
-		</div>
+		<h2>Services</h2>
 		<div class="service-list">
 			<div class="service-item">
-				<h3>Business advisory</h3>
-				<p>
-					Research, structured analysis and practical support for business planning, operations and
-					cross-border projects.
-				</p>
+				<h3>Business consulting</h3>
+				<p>Business research, planning, operational analysis and cross-border project support.</p>
 			</div>
 			<div class="service-item">
 				<h3>Translation</h3>
-				<p>
-					Careful translation and language review for business, technical and general materials in
-					Bulgarian and English.
-				</p>
+				<p>Bulgarian–English translation and review for business and general materials.</p>
 			</div>
 			<div class="service-item">
-				<h3>English-language instruction</h3>
-				<p>
-					Individual and organisational English instruction shaped around professional goals,
-					confident communication and real working contexts.
-				</p>
+				<h3>English instruction</h3>
+				<p>Individual and organisational instruction for professional English communication.</p>
 			</div>
-			<div class="service-item action">
-				<p>Tell us what you are working on and we will confirm whether we are a good fit.</p>
-				<a class="btn btn-primary" href="{base}/contact">Discuss an enquiry</a>
-			</div>
+			<nav class="page-actions" aria-label="Next steps">
+				<a class="btn btn-primary" href="{base}/contact">Service enquiry</a>
+				<a href="{base}/mobile-apps">Mobile applications →</a>
+			</nav>
 		</div>
 	</div>
 </section>
 
 <style>
-	.action {
+	.compact {
+		padding-top: 3.5rem;
+	}
+
+	.page-actions {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 2rem;
-		padding-top: 2.5rem;
-	}
-
-	@media (max-width: 600px) {
-		.action {
-			align-items: start;
-			flex-direction: column;
-		}
+		gap: 1.5rem;
+		padding-top: 2rem;
+		font-size: 0.82rem;
+		font-weight: 650;
 	}
 </style>

@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<title>Mobile Products — SPNSS EOOD</title>
+	<title>Mobile Applications — SPNSS EOOD</title>
 	<meta
 		name="description"
 		content="Mobile applications developed, published and supported by SPNSS EOOD."
@@ -12,53 +12,55 @@
 
 <section class="page-hero">
 	<div class="container">
-		<p class="eyebrow">Mobile products</p>
-		<h1>Small, purposeful software.</h1>
-		<p class="lead">
-			We create and operate independent mobile applications with an emphasis on usefulness, privacy
-			and careful product support.
-		</p>
+		<p class="eyebrow">Software</p>
+		<h1>Mobile applications</h1>
+		<p class="lead">Applications developed and published by SPNSS EOOD.</p>
 	</div>
 </section>
 
-<section class="content-section">
+<section class="content-section compact">
 	<div class="container content-grid">
-		<div>
-			<p class="eyebrow">Our approach</p>
-			<h2>Products made to earn their place.</h2>
-		</div>
+		<h2>Activities</h2>
 		<div class="service-list">
 			<div class="service-item">
-				<h3>Considered product design</h3>
-				<p>Clear interfaces and restrained feature sets designed around a specific, useful job.</p>
+				<h3>Application development</h3>
+				<p>Product design and software development for mobile applications.</p>
 			</div>
 			<div class="service-item">
-				<h3>Responsible publishing</h3>
-				<p>
-					SPNSS EOOD is the legal publisher of its applications and maintains transparent privacy,
-					terms and support information.
-				</p>
+				<h3>Publishing</h3>
+				<p>App Store distribution under the SPNSS EOOD legal entity.</p>
 			</div>
 			<div class="service-item">
-				<h3>Ongoing support</h3>
-				<p>
-					Questions, technical issues and data requests are handled through our dedicated support
-					channel.
-				</p>
+				<h3>User support</h3>
+				<p>Technical support, privacy enquiries and data deletion requests.</p>
 			</div>
-			<div class="links">
-				<a class="btn btn-primary" href="{base}/app-support">Open app support</a>
-				<a class="btn btn-secondary" href="{base}/privacy">Read our privacy policy</a>
-			</div>
+			<nav class="page-actions" aria-label="Mobile application information">
+				<a class="btn btn-primary" href="{base}/app-support">App support</a>
+				<a href="{base}/privacy">Privacy policy →</a>
+				<a href="{base}/terms">Terms →</a>
+			</nav>
 		</div>
 	</div>
 </section>
 
 <style>
-	.links {
+	.compact {
+		padding-top: 3.5rem;
+	}
+
+	.page-actions {
 		display: flex;
-		gap: 0.75rem;
-		flex-wrap: wrap;
-		padding-top: 2.5rem;
+		align-items: center;
+		gap: 1.5rem;
+		padding-top: 2rem;
+		font-size: 0.82rem;
+		font-weight: 650;
+	}
+
+	@media (max-width: 600px) {
+		.page-actions {
+			align-items: start;
+			flex-direction: column;
+		}
 	}
 </style>
