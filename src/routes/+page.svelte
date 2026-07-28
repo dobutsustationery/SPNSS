@@ -23,230 +23,142 @@
 
 <!-- Hero Section -->
 <section class="hero-section">
-	<div class="container hero-container">
-		<div class="hero-content">
-			<div class="hero-badges">
-				<span class="badge badge-blue">Sofia, Bulgaria</span>
-				<span class="badge badge-emerald">Apple Developer Partner</span>
-				<span class="badge badge-amber">E-Commerce Operator</span>
-			</div>
-
+	<div class="container hero-layout">
+		<div class="hero-main">
+			<span class="tag-label">Sofia, Bulgaria &bull; Corporate Entity</span>
 			<h1 class="hero-title">SPNSS EOOD.</h1>
-			<p class="hero-subtitle">
-				Empowering global businesses with expert corporate consulting, multilingual translation &
-				ESL education, innovative iOS mobile app development, and premium Japanese stationery
-				e-commerce.
+			<p class="hero-lead">
+				Strategic business consulting, multilingual translation & ESL instruction, mobile app
+				engineering for iOS, and curated Japanese stationery e-commerce.
 			</p>
 
-			<div class="hero-actions">
-				<a href="#services" class="btn btn-primary">Our Services</a>
-				<a href="{base}/app-support" class="btn btn-secondary">iOS App Support</a>
+			<div class="hero-cta-group">
+				<a href="#ventures" class="btn btn-primary">Explore Ventures</a>
+				<a href="{base}/app-support" class="btn btn-secondary">iOS App Support Portal</a>
 				<a
 					href="https://dobutsustationery.com"
 					target="_blank"
 					rel="noopener noreferrer"
-					class="btn btn-accent"
+					class="btn btn-outline"
 				>
-					Visit Dobutsu Stationery ↗
+					Dobutsu Stationery ↗
 				</a>
 			</div>
 		</div>
 
-		<div class="hero-card-widget card">
-			<div class="widget-header">
-				<span class="widget-icon">🏢</span>
-				<div>
-					<h3>Corporate Identity</h3>
-					<p class="widget-tag">Registered Bulgarian EOOD Company</p>
-				</div>
-			</div>
-
+		<div class="hero-aside card">
+			<span class="tag-label">Legal Registration</span>
+			<h3 class="aside-title">SPNSS EOOD</h3>
 			<address class="legal-address">
-				<strong>SPNSS EOOD</strong><br />
 				4 Hristo Belchev St.<br />
 				Floor 1<br />
 				Sofia 1000<br />
 				Bulgaria
 			</address>
 
-			<div class="widget-divider"></div>
+			<div class="aside-divider"></div>
 
-			<div class="widget-stats">
-				<div class="stat-item">
-					<span class="stat-num">3</span>
-					<span class="stat-label">Core Divisions</span>
+			<div class="aside-metrics">
+				<div class="metric-item">
+					<span class="metric-val">EU &bull; BG</span>
+					<span class="metric-lbl">Jurisdiction</span>
 				</div>
-				<div class="stat-item">
-					<span class="stat-num">100%</span>
-					<span class="stat-label">Apple Compliant</span>
-				</div>
-				<div class="stat-item">
-					<span class="stat-num">24h</span>
-					<span class="stat-label">Support SLA</span>
+				<div class="metric-item">
+					<span class="metric-val">iOS &bull; App Store</span>
+					<span class="metric-lbl">Apple Developer</span>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- Company Verification & Apple Developer Section -->
-<section class="apple-dev-section">
+<!-- Ventures & Business Pillars -->
+<section id="ventures" class="ventures-section">
 	<div class="container">
-		<div class="apple-card card">
-			<div class="apple-grid">
-				<div class="apple-info">
-					<div class="apple-tag-box">
-						<span class="apple-symbol"></span>
-						<span class="apple-tag-text">Apple Developer Account Verification</span>
-					</div>
-					<h2>Published Mobile App Identity & Governance</h2>
-					<p>
-						SPNSS EOOD is a registered corporate developer under the Apple Developer Program. We
-						build, manage, and publish native mobile software applications on the Apple App Store.
-					</p>
-					<div class="apple-features">
-						<div class="apple-feature-item">
-							<span class="check-icon">✓</span>
-							<div>
-								<strong>App Store Review Compliance</strong>
-								<p>
-									Verified legal publisher details, privacy protections, and user data safeguards.
-								</p>
-							</div>
-						</div>
-						<div class="apple-feature-item">
-							<span class="check-icon">✓</span>
-							<div>
-								<strong>Dedicated User & Technical Support</strong>
-								<p>Public support endpoint and ticketing SLA for all published iOS applications.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="apple-cta-box">
-					<h3>iOS App Reviewer Quick Links</h3>
-					<p>Required documentation for Apple App Review and App Store guidelines compliance:</p>
-					<div class="apple-links-list">
-						<a href="{base}/app-support" class="apple-link-card">
-							<span class="link-title">App Support Portal</span>
-							<span class="link-desc">Contact support, FAQs, & bug reporting</span>
-						</a>
-						<a href="{base}/privacy" class="apple-link-card">
-							<span class="link-title">App Privacy Policy</span>
-							<span class="link-desc">GDPR & App Store privacy disclosure</span>
-						</a>
-						<a href="{base}/terms" class="apple-link-card">
-							<span class="link-title">Terms of Service</span>
-							<span class="link-desc">User agreements & app licensing terms</span>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<!-- Services / Business Pillars Section -->
-<section id="services" class="services-section">
-	<div class="container">
-		<div class="section-header">
-			<span class="badge badge-blue">Our Business Pillars</span>
-			<h2>Comprehensive Services & Global Ventures</h2>
-			<p>
-				SPNSS EOOD operates across corporate consulting, software engineering, and international
-				retail trade.
-			</p>
+		<div class="section-intro">
+			<span class="tag-label">Core Business Divisions</span>
+			<h2>Ventures & Capabilities</h2>
 		</div>
 
-		<div class="services-grid">
-			<!-- Pillar 1: Consulting, Translation & ESL -->
-			<div class="service-card card">
-				<div class="card-icon-box icon-blue">
-					<span>🌐</span>
-				</div>
+		<div class="pillars-grid">
+			<!-- Pillar 1 -->
+			<div class="pillar-card card">
+				<div class="pillar-num">01</div>
 				<h3>Consulting, Translation & ESL</h3>
-				<p class="service-lead">
-					Empowering organizations through strategic corporate advisory, precision language
-					translation, and corporate ESL education.
+				<p class="pillar-summary">
+					Empowering international organizations through strategic advisory, legal and technical
+					translation, and corporate language instruction.
 				</p>
-				<ul class="service-list">
+				<ul class="pillar-list">
 					<li>
-						<strong>Management & Business Advisory:</strong> Operational strategy, market expansion, and
-						compliance guidance in Bulgaria and the EU.
+						<strong>Corporate Advisory:</strong> Business strategy, operations, and EU market entry guidance.
 					</li>
 					<li>
-						<strong>Multilingual Translation:</strong> Professional technical, legal, and business translation
-						(English, Bulgarian, Japanese).
+						<strong>Multilingual Translation:</strong> High-precision translation covering Bulgarian,
+						English, and Japanese.
 					</li>
 					<li>
-						<strong>ESL Training Services:</strong> Tailored English as a Second Language curriculum and
-						tutoring for corporate teams and executives.
+						<strong>ESL Instruction:</strong> Customized English curriculum and executive language tutoring.
 					</li>
 				</ul>
 			</div>
 
-			<!-- Pillar 2: Mobile App Development -->
-			<div id="mobile-apps" class="service-card card">
-				<div class="card-icon-box icon-emerald">
-					<span>📱</span>
-				</div>
-				<h3>Mobile Application Development</h3>
-				<p class="service-lead">
-					Engineering elegant, high-performance mobile applications for iOS and Apple platforms.
+			<!-- Pillar 2 -->
+			<div id="mobile-apps" class="pillar-card card">
+				<div class="pillar-num">02</div>
+				<h3>Mobile Application Engineering</h3>
+				<p class="pillar-summary">
+					Architecting refined, high-performance mobile software applications built specifically for
+					the Apple iOS ecosystem.
 				</p>
-				<ul class="service-list">
+				<ul class="pillar-list">
 					<li>
-						<strong>Native iOS Engineering:</strong> Swift & SwiftUI application development built for
-						performance, security, and battery efficiency.
+						<strong>Native iOS Development:</strong> Swift and SwiftUI applications designed for elegance,
+						speed, and privacy.
 					</li>
 					<li>
-						<strong>UX/UI Design & Product Development:</strong> Human Interface Guidelines compliant
-						design tailored for mobile users.
+						<strong>UI/UX Design:</strong> Human Interface Guidelines compliant user experiences.
 					</li>
 					<li>
-						<strong>App Lifecycle & Publishing:</strong> Complete management of App Store submission,
-						CI/CD deployment, and ongoing maintenance.
+						<strong>Lifecycle & Support:</strong> Complete App Store deployment, maintenance, and user
+						support.
 					</li>
 				</ul>
-				<div class="card-footer-link">
-					<a href="{base}/app-support">Learn more about our iOS Mobile Apps & Support →</a>
+				<div class="pillar-link">
+					<a href="{base}/app-support">iOS App Support Portal & Reviewer Hub &rarr;</a>
 				</div>
 			</div>
 
-			<!-- Pillar 3: E-Commerce Japanese Stationery -->
-			<div class="service-card card highlight-card">
-				<div class="card-icon-box icon-amber">
-					<span>✏️</span>
-				</div>
-				<div class="card-top-tag">E-Commerce Operation</div>
-				<h3>Dobutsu Stationery</h3>
-				<p class="service-lead">
-					Direct-to-consumer e-commerce business bringing authentic, premium Japanese stationery to
-					enthusiasts worldwide.
+			<!-- Pillar 3 -->
+			<div class="pillar-card card pillar-highlight">
+				<div class="pillar-num num-accent">03</div>
+				<h3>Dobutsu Stationery E-Commerce</h3>
+				<p class="pillar-summary">
+					Operating a direct-to-consumer e-commerce brand bringing authentic, high-grade Japanese
+					stationery to global customers.
 				</p>
-				<ul class="service-list">
+				<ul class="pillar-list">
 					<li>
-						<strong>Curated Japanese Imports:</strong> Premium pens, specialized notebooks, high-grade
-						papers, and desk accessories imported directly from Japan.
+						<strong>Curated Imports:</strong> Premium pens, notebooks, and specialized paper imported
+						from Japan.
 					</li>
 					<li>
-						<strong>Storefront Destination:</strong> Operational retail store hosted at
+						<strong>Online Storefront:</strong> Hosted and operating at
 						<a href="https://dobutsustationery.com" target="_blank" rel="noopener noreferrer"
 							>dobutsustationery.com</a
 						>.
 					</li>
 					<li>
-						<strong>Global Fulfillment:</strong> Fast, reliable international shipping with dedicated
-						customer care.
+						<strong>Global Retail:</strong> Direct shipping, inventory care, and international customer
+						service.
 					</li>
 				</ul>
-				<div class="card-action-btn">
+				<div class="pillar-action">
 					<a
 						href="https://dobutsustationery.com"
 						target="_blank"
 						rel="noopener noreferrer"
-						class="btn btn-accent w-full"
+						class="btn btn-primary w-full"
 					>
 						Visit dobutsustationery.com ↗
 					</a>
@@ -256,99 +168,123 @@
 	</div>
 </section>
 
-<!-- Contact & Address Section -->
-<section id="contact" class="contact-section">
+<!-- Apple Developer Account & Compliance Hub -->
+<section class="apple-compliance-section">
 	<div class="container">
-		<div class="contact-grid">
-			<div class="contact-info">
-				<span class="badge badge-blue">Get In Touch</span>
-				<h2>Contact SPNSS EOOD</h2>
-				<p class="contact-desc">
-					Whether you require business consulting, translation services, mobile application
-					collaboration, or stationery inquiries, our team is ready to assist.
+		<div class="compliance-card card">
+			<div class="compliance-content">
+				<div class="compliance-header">
+					<span class="tag-label">Apple Developer Account Verification</span>
+					<h2>Mobile Application Publishing & Governance</h2>
+				</div>
+				<p class="compliance-lead">
+					SPNSS EOOD is an official corporate member of the Apple Developer Program. We maintain
+					rigorous standards of software performance, data privacy, and customer support for all
+					mobile applications published under our legal name on the iOS App Store.
 				</p>
 
-				<div class="contact-details-box card">
-					<div class="detail-row">
-						<span class="detail-icon">📍</span>
-						<div>
-							<strong>Registered Address</strong>
-							<address>
-								SPNSS EOOD.<br />
-								4 Hristo Belchev St.<br />
-								Floor 1<br />
-								Sofia 1000<br />
-								Bulgaria
-							</address>
-						</div>
+				<div class="compliance-grid">
+					<div class="comp-col">
+						<h4>Legal Publisher Identity</h4>
+						<p>Registered Entity: <strong>SPNSS EOOD</strong></p>
+						<p>Sofia 1000, Bulgaria</p>
 					</div>
-
-					<div class="detail-row">
-						<span class="detail-icon">✉️</span>
-						<div>
-							<strong>Corporate & App Support Email</strong>
-							<p><a href="mailto:support@spnss.com">support@spnss.com</a></p>
-						</div>
+					<div class="comp-col">
+						<h4>Developer Support SLA</h4>
+						<p>Target Response: <strong>24–48 Business Hours</strong></p>
+						<p>Direct Email: <a href="mailto:support@spnss.com">support@spnss.com</a></p>
 					</div>
-
-					<div class="detail-row">
-						<span class="detail-icon">🛍️</span>
-						<div>
-							<strong>Stationery E-Commerce</strong>
-							<p>
-								<a href="https://dobutsustationery.com" target="_blank" rel="noopener noreferrer"
-									>dobutsustationery.com</a
-								>
-							</p>
+					<div class="comp-col">
+						<h4>App Store Review Documentation</h4>
+						<div class="comp-links">
+							<a href="{base}/app-support">App Support Portal</a>
+							<a href="{base}/privacy">Privacy Policy</a>
+							<a href="{base}/terms">Terms of Service</a>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+</section>
 
-			<div class="contact-form-container card">
-				<h3>Send Us a Message</h3>
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+	<div class="container">
+		<div class="contact-layout">
+			<div class="contact-info">
+				<span class="tag-label">Direct Communication</span>
+				<h2>Get in Touch</h2>
+				<p class="contact-intro">
+					For corporate consulting inquiries, language services, mobile app development, or
+					e-commerce questions, please reach out directly.
+				</p>
+
+				<div class="address-box card">
+					<h4>Headquarters & Address</h4>
+					<address class="legal-address">
+						<strong>SPNSS EOOD</strong><br />
+						4 Hristo Belchev St.<br />
+						Floor 1<br />
+						Sofia 1000<br />
+						Bulgaria
+					</address>
+					<p class="email-line">Email: <a href="mailto:support@spnss.com">support@spnss.com</a></p>
+					<p class="store-line">
+						E-Commerce: <a
+							href="https://dobutsustationery.com"
+							target="_blank"
+							rel="noopener noreferrer">dobutsustationery.com</a
+						>
+					</p>
+				</div>
+			</div>
+
+			<div class="contact-form-card card">
+				<h3>Send a Request</h3>
 				{#if formState.submitted}
-					<div class="success-message">
-						<span class="success-icon">✓</span>
-						<h4>Thank You for Contacting SPNSS EOOD!</h4>
-						<p>We have received your message and will respond within 24–48 business hours.</p>
+					<div class="form-feedback">
+						<h4>Message Received</h4>
+						<p>
+							Thank you for reaching out. Our team in Sofia will respond within 24–48 business
+							hours.
+						</p>
 					</div>
 				{:else}
-					<form onsubmit={handleSubmit} class="contact-form">
-						<div class="form-group">
-							<label for="name">Your Name / Organization</label>
+					<form onsubmit={handleSubmit} class="inquiry-form">
+						<div class="field-group">
+							<label for="name">Name / Organization</label>
 							<input
 								type="text"
 								id="name"
 								bind:value={formState.name}
 								required
-								placeholder="Jane Doe"
+								placeholder="Full Name"
 							/>
 						</div>
 
-						<div class="form-group">
+						<div class="field-group">
 							<label for="email">Email Address</label>
 							<input
 								type="email"
 								id="email"
 								bind:value={formState.email}
 								required
-								placeholder="jane@company.com"
+								placeholder="email@company.com"
 							/>
 						</div>
 
-						<div class="form-group">
+						<div class="field-group">
 							<label for="service">Inquiry Category</label>
 							<select id="service" bind:value={formState.service}>
 								<option value="consulting">Corporate Consulting & Advisory</option>
 								<option value="translation">Translation & ESL Services</option>
-								<option value="mobile">Mobile App Development & Support</option>
+								<option value="mobile">iOS Mobile App Development & Support</option>
 								<option value="stationery">Japanese Stationery / Dobutsu Inquiry</option>
-								<option value="other">General Inquiry</option>
 							</select>
 						</div>
 
-						<div class="form-group">
+						<div class="field-group">
 							<label for="message">Message</label>
 							<textarea
 								id="message"
@@ -359,7 +295,7 @@
 							></textarea>
 						</div>
 
-						<button type="submit" class="btn btn-primary w-full">Send Message</button>
+						<button type="submit" class="btn btn-primary w-full">Submit Message</button>
 					</form>
 				{/if}
 			</div>
@@ -370,75 +306,51 @@
 <style>
 	/* Hero Section */
 	.hero-section {
-		padding: 4.5rem 0 3.5rem;
-		background: linear-gradient(180deg, #f1f5f9 0%, #f8fafc 100%);
-		border-bottom: 1px solid var(--border-color);
+		padding: 5.5rem 0 4.5rem;
+		border-bottom: 1px solid var(--border-light);
+		background-color: var(--bg-main);
 	}
 
-	.hero-container {
+	.hero-layout {
 		display: grid;
-		grid-template-columns: 1.25fr 1fr;
-		gap: 3.5rem;
+		grid-template-columns: 1.4fr 1fr;
+		gap: 4rem;
 		align-items: center;
-	}
-
-	.hero-badges {
-		display: flex;
-		gap: 0.5rem;
-		flex-wrap: wrap;
-		margin-bottom: 1.25rem;
 	}
 
 	.hero-title {
-		font-family: var(--font-heading);
-		font-size: 3.25rem;
+		font-family: var(--font-sans);
+		font-size: 3.5rem;
 		font-weight: 800;
+		letter-spacing: -0.03em;
 		color: var(--text-primary);
-		line-height: 1.1;
-		margin-bottom: 1.25rem;
-		letter-spacing: -0.02em;
+		line-height: 1.08;
+		margin-bottom: 1.5rem;
 	}
 
-	.hero-subtitle {
+	.hero-lead {
 		font-size: 1.15rem;
 		color: var(--text-secondary);
 		line-height: 1.6;
-		margin-bottom: 2rem;
+		margin-bottom: 2.25rem;
+		font-weight: 400;
+		max-width: 580px;
 	}
 
-	.hero-actions {
+	.hero-cta-group {
 		display: flex;
 		gap: 1rem;
 		flex-wrap: wrap;
 	}
 
-	.hero-card-widget {
-		background: var(--bg-card);
-		border-color: #cbd5e1;
-		position: relative;
+	.hero-aside {
+		background-color: var(--bg-card);
 	}
 
-	.widget-header {
-		display: flex;
-		align-items: center;
-		gap: 1rem;
-		margin-bottom: 1.5rem;
-	}
-
-	.widget-icon {
-		font-size: 2.25rem;
-	}
-
-	.widget-header h3 {
-		font-family: var(--font-heading);
+	.aside-title {
 		font-size: 1.25rem;
-		color: var(--text-primary);
-	}
-
-	.widget-tag {
-		font-size: 0.85rem;
-		color: var(--brand-accent);
-		font-weight: 600;
+		font-weight: 700;
+		margin-bottom: 0.75rem;
 	}
 
 	.legal-address {
@@ -446,286 +358,116 @@
 		font-size: 0.95rem;
 		color: var(--text-secondary);
 		line-height: 1.6;
-		padding: 1rem;
-		background-color: var(--bg-accent-soft);
-		border-radius: var(--radius-md);
-		border-left: 4px solid var(--brand-primary);
 	}
 
-	.widget-divider {
+	.aside-divider {
 		height: 1px;
-		background-color: var(--border-color);
+		background-color: var(--border-light);
 		margin: 1.5rem 0;
 	}
 
-	.widget-stats {
+	.aside-metrics {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
-		text-align: center;
 	}
 
-	.stat-num {
+	.metric-val {
 		display: block;
-		font-family: var(--font-heading);
-		font-weight: 800;
-		font-size: 1.4rem;
-		color: var(--brand-primary);
+		font-size: 0.9rem;
+		font-weight: 700;
+		color: var(--text-primary);
 	}
 
-	.stat-label {
+	.metric-lbl {
 		font-size: 0.75rem;
 		color: var(--text-muted);
-		font-weight: 600;
 		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
 
-	/* Apple Dev Section */
-	.apple-dev-section {
-		padding: 3.5rem 0;
+	/* Ventures Section */
+	.ventures-section {
+		padding: 5.5rem 0;
 	}
 
-	.apple-card {
-		background: linear-gradient(135deg, #ffffff 0%, #f0f9ff 100%);
-		border: 1px solid #bae6fd;
+	.section-intro {
+		margin-bottom: 3.5rem;
 	}
 
-	.apple-grid {
-		display: grid;
-		grid-template-columns: 1.3fr 1fr;
-		gap: 3rem;
-	}
-
-	.apple-tag-box {
-		display: inline-flex;
-		align-items: center;
-		gap: 0.5rem;
-		padding: 0.35rem 0.85rem;
-		background-color: #0f172a;
-		color: white;
-		border-radius: 9999px;
-		font-size: 0.85rem;
-		font-weight: 600;
-		margin-bottom: 1rem;
-	}
-
-	.apple-symbol {
-		font-size: 1.1rem;
-	}
-
-	.apple-info h2 {
-		font-family: var(--font-heading);
-		font-size: 1.85rem;
-		color: var(--text-primary);
-		margin-bottom: 1rem;
-	}
-
-	.apple-info p {
-		font-size: 1rem;
-		color: var(--text-secondary);
-		line-height: 1.6;
-		margin-bottom: 1.5rem;
-	}
-
-	.apple-features {
-		display: flex;
-		flex-direction: column;
-		gap: 1rem;
-	}
-
-	.apple-feature-item {
-		display: flex;
-		gap: 0.75rem;
-		align-items: flex-start;
-	}
-
-	.check-icon {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 24px;
-		height: 24px;
-		background-color: var(--brand-emerald);
-		color: white;
-		border-radius: 50%;
-		font-size: 0.8rem;
-		font-weight: 800;
-		flex-shrink: 0;
-		margin-top: 0.1rem;
-	}
-
-	.apple-cta-box {
-		background-color: var(--bg-card);
-		padding: 1.75rem;
-		border-radius: var(--radius-md);
-		border: 1px solid var(--border-color);
-		box-shadow: var(--shadow-sm);
-	}
-
-	.apple-cta-box h3 {
-		font-family: var(--font-heading);
-		font-size: 1.15rem;
-		color: var(--text-primary);
-		margin-bottom: 0.5rem;
-	}
-
-	.apple-cta-box p {
-		font-size: 0.85rem;
-		color: var(--text-muted);
-		margin-bottom: 1rem;
-	}
-
-	.apple-links-list {
-		display: flex;
-		flex-direction: column;
-		gap: 0.75rem;
-	}
-
-	.apple-link-card {
-		display: flex;
-		flex-direction: column;
-		padding: 0.75rem 1rem;
-		background-color: var(--bg-main);
-		border: 1px solid var(--border-color);
-		border-radius: 8px;
-		transition: all 0.2s ease;
-	}
-
-	.apple-link-card:hover {
-		background-color: var(--bg-accent-soft);
-		border-color: var(--brand-accent);
-	}
-
-	.link-title {
-		font-weight: 700;
-		font-size: 0.9rem;
-		color: var(--brand-primary);
-	}
-
-	.link-desc {
-		font-size: 0.78rem;
-		color: var(--text-muted);
-	}
-
-	/* Services Section */
-	.services-section {
-		padding: 4.5rem 0;
-		background-color: var(--bg-main);
-	}
-
-	.section-header {
-		text-align: center;
-		max-width: 700px;
-		margin: 0 auto 3.5rem;
-	}
-
-	.section-header h2 {
-		font-family: var(--font-heading);
+	.section-intro h2 {
 		font-size: 2.25rem;
 		font-weight: 800;
+		letter-spacing: -0.02em;
 		color: var(--text-primary);
-		margin: 0.75rem 0;
 	}
 
-	.section-header p {
-		font-size: 1.05rem;
-		color: var(--text-secondary);
-	}
-
-	.services-grid {
+	.pillars-grid {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: 2rem;
 	}
 
-	.service-card {
+	.pillar-card {
 		display: flex;
 		flex-direction: column;
-		position: relative;
 	}
 
-	.card-icon-box {
-		width: 54px;
-		height: 54px;
-		border-radius: 14px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 1.75rem;
-		margin-bottom: 1.5rem;
+	.pillar-num {
+		font-size: 0.85rem;
+		font-weight: 700;
+		color: var(--text-muted);
+		margin-bottom: 1rem;
+		letter-spacing: 0.05em;
 	}
 
-	.icon-blue {
-		background-color: #dbeafe;
-	}
-
-	.icon-emerald {
-		background-color: #d1fae5;
-	}
-
-	.icon-amber {
-		background-color: #ffedd5;
-	}
-
-	.service-card h3 {
-		font-family: var(--font-heading);
-		font-size: 1.35rem;
+	.pillar-card h3 {
+		font-size: 1.25rem;
+		font-weight: 700;
 		color: var(--text-primary);
 		margin-bottom: 0.75rem;
+		letter-spacing: -0.01em;
 	}
 
-	.service-lead {
-		font-size: 0.95rem;
+	.pillar-summary {
+		font-size: 0.92rem;
 		color: var(--text-secondary);
+		line-height: 1.55;
 		margin-bottom: 1.25rem;
-		line-height: 1.5;
 	}
 
-	.service-list {
+	.pillar-list {
 		list-style: none;
 		display: flex;
 		flex-direction: column;
-		gap: 0.9rem;
+		gap: 0.75rem;
 		margin-bottom: 1.5rem;
 	}
 
-	.service-list li {
+	.pillar-list li {
 		font-size: 0.88rem;
 		color: var(--text-secondary);
 		line-height: 1.45;
 	}
 
-	.service-list strong {
-		color: var(--text-primary);
-	}
-
-	.highlight-card {
-		border-color: #fed7aa;
-		background: linear-gradient(180deg, #ffffff 0%, #fff7ed 100%);
-	}
-
-	.card-top-tag {
-		position: absolute;
-		top: 1rem;
-		right: 1rem;
-		font-size: 0.72rem;
-		font-weight: 700;
-		text-transform: uppercase;
-		background-color: var(--brand-amber);
-		color: white;
-		padding: 0.2rem 0.6rem;
-		border-radius: 9999px;
-	}
-
-	.card-footer-link {
+	.pillar-link {
 		margin-top: auto;
 		padding-top: 1rem;
-		border-top: 1px solid var(--border-color);
-		font-size: 0.88rem;
+		border-top: 1px solid var(--border-light);
+		font-size: 0.85rem;
 		font-weight: 600;
 	}
 
-	.card-action-btn {
+	.pillar-highlight {
+		background-color: #fafaf9;
+		border-color: rgba(0, 0, 0, 0.12);
+	}
+
+	.num-accent {
+		color: var(--accent-gold);
+	}
+
+	.pillar-action {
 		margin-top: auto;
 	}
 
@@ -733,157 +475,184 @@
 		width: 100%;
 	}
 
-	/* Contact Section */
-	.contact-section {
-		padding: 4.5rem 0;
-		background-color: #ffffff;
-		border-top: 1px solid var(--border-color);
+	/* Apple Compliance Section */
+	.apple-compliance-section {
+		padding: 2rem 0 5.5rem;
 	}
 
-	.contact-grid {
-		display: grid;
-		grid-template-columns: 1fr 1.1fr;
-		gap: 3.5rem;
+	.compliance-card {
+		background-color: var(--bg-card);
+		border: 1px solid var(--border-light);
 	}
 
-	.contact-info h2 {
-		font-family: var(--font-heading);
-		font-size: 2.25rem;
+	.compliance-header h2 {
+		font-size: 1.85rem;
 		font-weight: 800;
-		color: var(--text-primary);
-		margin: 0.75rem 0 1rem;
+		letter-spacing: -0.02em;
+		margin-bottom: 0.75rem;
 	}
 
-	.contact-desc {
-		font-size: 1.05rem;
+	.compliance-lead {
+		font-size: 1rem;
 		color: var(--text-secondary);
+		line-height: 1.6;
+		max-width: 850px;
 		margin-bottom: 2rem;
 	}
 
-	.contact-details-box {
-		display: flex;
-		flex-direction: column;
-		gap: 1.5rem;
+	.compliance-grid {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+		padding-top: 2rem;
+		border-top: 1px solid var(--border-light);
 	}
 
-	.detail-row {
-		display: flex;
-		gap: 1rem;
-		align-items: flex-start;
-	}
-
-	.detail-icon {
-		font-size: 1.5rem;
-	}
-
-	.detail-row strong {
-		display: block;
-		font-size: 0.95rem;
+	.comp-col h4 {
+		font-size: 0.88rem;
+		font-weight: 700;
 		color: var(--text-primary);
-		margin-bottom: 0.25rem;
+		margin-bottom: 0.5rem;
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
 	}
 
-	.detail-row address,
-	.detail-row p {
-		font-style: normal;
-		font-size: 0.9rem;
+	.comp-col p {
+		font-size: 0.88rem;
 		color: var(--text-secondary);
 		line-height: 1.5;
 	}
 
-	/* Form */
-	.contact-form-container h3 {
-		font-family: var(--font-heading);
-		font-size: 1.35rem;
-		color: var(--text-primary);
-		margin-bottom: 1.5rem;
-	}
-
-	.contact-form {
-		display: flex;
-		flex-direction: column;
-		gap: 1.25rem;
-	}
-
-	.form-group {
+	.comp-links {
 		display: flex;
 		flex-direction: column;
 		gap: 0.4rem;
 	}
 
-	.form-group label {
+	.comp-links a {
 		font-size: 0.88rem;
 		font-weight: 600;
 		color: var(--text-primary);
 	}
 
-	.form-group input,
-	.form-group select,
-	.form-group textarea {
+	.comp-links a:hover {
+		color: var(--text-secondary);
+	}
+
+	/* Contact Section */
+	.contact-section {
+		padding: 5.5rem 0;
+		background-color: #ffffff;
+		border-top: 1px solid var(--border-light);
+	}
+
+	.contact-layout {
+		display: grid;
+		grid-template-columns: 1fr 1.1fr;
+		gap: 4rem;
+	}
+
+	.contact-info h2 {
+		font-size: 2.25rem;
+		font-weight: 800;
+		letter-spacing: -0.02em;
+		margin-bottom: 1rem;
+	}
+
+	.contact-intro {
+		font-size: 1.05rem;
+		color: var(--text-secondary);
+		line-height: 1.6;
+		margin-bottom: 2rem;
+	}
+
+	.address-box h4 {
+		font-size: 0.95rem;
+		font-weight: 700;
+		margin-bottom: 0.75rem;
+	}
+
+	.email-line,
+	.store-line {
+		font-size: 0.9rem;
+		color: var(--text-secondary);
+		margin-top: 0.75rem;
+	}
+
+	.contact-form-card h3 {
+		font-size: 1.35rem;
+		font-weight: 700;
+		margin-bottom: 1.5rem;
+	}
+
+	.inquiry-form {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	.field-group {
+		display: flex;
+		flex-direction: column;
+		gap: 0.4rem;
+	}
+
+	.field-group label {
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: var(--text-primary);
+	}
+
+	.field-group input,
+	.field-group select,
+	.field-group textarea {
 		padding: 0.75rem 1rem;
-		border: 1px solid var(--border-color);
+		border: 1px solid var(--border-light);
 		border-radius: var(--radius-md);
 		font-family: var(--font-sans);
-		font-size: 0.95rem;
+		font-size: 0.92rem;
 		background-color: var(--bg-main);
 		color: var(--text-primary);
 		transition: border-color 0.2s ease;
 	}
 
-	.form-group input:focus,
-	.form-group select:focus,
-	.form-group textarea:focus {
+	.field-group input:focus,
+	.field-group select:focus,
+	.field-group textarea:focus {
 		outline: none;
 		border-color: var(--border-focus);
-		box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
 	}
 
-	.success-message {
+	.form-feedback {
+		padding: 2rem;
 		text-align: center;
-		padding: 2.5rem 1.5rem;
 	}
 
-	.success-icon {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		width: 56px;
-		height: 56px;
-		background-color: var(--brand-emerald);
-		color: white;
-		font-size: 1.75rem;
-		font-weight: 800;
-		border-radius: 50%;
-		margin-bottom: 1rem;
-	}
-
-	.success-message h4 {
-		font-family: var(--font-heading);
-		font-size: 1.25rem;
-		color: var(--text-primary);
+	.form-feedback h4 {
+		font-size: 1.2rem;
+		font-weight: 700;
 		margin-bottom: 0.5rem;
 	}
 
-	.success-message p {
-		font-size: 0.95rem;
+	.form-feedback p {
+		font-size: 0.92rem;
 		color: var(--text-secondary);
 	}
 
-	/* Responsive */
-	@media (max-width: 990px) {
-		.hero-container,
-		.apple-grid,
-		.contact-grid {
+	@media (max-width: 960px) {
+		.hero-layout,
+		.compliance-grid,
+		.contact-layout {
 			grid-template-columns: 1fr;
 			gap: 2.5rem;
 		}
 
-		.services-grid {
+		.pillars-grid {
 			grid-template-columns: 1fr;
 		}
 
 		.hero-title {
-			font-size: 2.5rem;
+			font-size: 2.75rem;
 		}
 	}
 </style>

@@ -4,72 +4,60 @@
 
 <footer class="site-footer">
 	<div class="container">
-		<div class="footer-grid">
-			<div class="footer-col brand-col">
-				<div class="footer-logo">
-					<span class="logo-box">SP</span>
-					<span class="logo-title">SPNSS EOOD</span>
-				</div>
-				<p class="company-desc">
-					Premier European corporate consulting, language translation & ESL training, mobile app
+		<div class="footer-top">
+			<div class="footer-brand-col">
+				<div class="brand-title">SPNSS EOOD</div>
+				<p class="brand-desc">
+					European corporate consulting, language translation & ESL instruction, mobile app
 					development studio, and operator of Japanese stationery e-commerce.
 				</p>
-				<address class="footer-address">
-					<strong>SPNSS EOOD</strong><br />
+				<address class="company-address">
 					4 Hristo Belchev St., Floor 1<br />
 					Sofia 1000, Bulgaria
 				</address>
 			</div>
 
-			<div class="footer-col">
-				<h4>Business Operations</h4>
+			<div class="footer-nav-col">
+				<span class="footer-heading">Ventures</span>
 				<ul>
-					<li><a href="{base}/#services">Consulting & Advisory</a></li>
-					<li><a href="{base}/#services">Translation & ESL Services</a></li>
-					<li><a href="{base}/#mobile-apps">iOS Mobile App Studio</a></li>
+					<li><a href="{base}/#ventures">Management Consulting</a></li>
+					<li><a href="{base}/#ventures">Translation & ESL Services</a></li>
+					<li><a href="{base}/#mobile-apps">iOS App Development</a></li>
 					<li>
 						<a href="https://dobutsustationery.com" target="_blank" rel="noopener noreferrer"
-							>Japanese Stationery E-Commerce</a
+							>Dobutsu Stationery ↗</a
 						>
 					</li>
 				</ul>
 			</div>
 
-			<div class="footer-col">
-				<h4>Support & Developer</h4>
+			<div class="footer-nav-col">
+				<span class="footer-heading">Developer & Support</span>
 				<ul>
 					<li><a href="{base}/app-support">iOS App Support Portal</a></li>
 					<li><a href="{base}/privacy">Privacy Policy</a></li>
 					<li><a href="{base}/terms">Terms of Service</a></li>
-					<li><a href="{base}/#contact">Contact Corporate Support</a></li>
+					<li><a href="{base}/#contact">Contact Support</a></li>
 				</ul>
 			</div>
 
-			<div class="footer-col">
-				<h4>Apple Developer Status</h4>
-				<div class="apple-badge-card">
-					<span class="apple-icon"></span>
-					<div>
-						<strong>Apple Developer Member</strong>
-						<p>
-							Verified corporate developer entity publishing mobile applications on the iOS App
-							Store.
-						</p>
-					</div>
-				</div>
-				<p class="support-email">
-					Direct Support: <a href="mailto:support@spnss.com">support@spnss.com</a>
+			<div class="footer-nav-col">
+				<span class="footer-heading">Apple Developer Status</span>
+				<p class="apple-dev-text">
+					Registered corporate developer entity publishing mobile software applications on the Apple
+					App Store.
+				</p>
+				<p class="contact-email">
+					Support: <a href="mailto:support@spnss.com">support@spnss.com</a>
 				</p>
 			</div>
 		</div>
 
 		<div class="footer-bottom">
-			<p>
-				&copy; {new Date().getFullYear()} SPNSS EOOD. All rights reserved. Registered in Sofia, Bulgaria.
-			</p>
-			<div class="footer-bottom-links">
-				<a href="{base}/privacy">Privacy</a>
-				<a href="{base}/terms">Terms</a>
+			<p>&copy; {new Date().getFullYear()} SPNSS EOOD. All rights reserved.</p>
+			<div class="bottom-links">
+				<a href="{base}/privacy">Privacy Policy</a>
+				<a href="{base}/terms">Terms of Service</a>
 				<a href="{base}/app-support">App Support</a>
 			</div>
 		</div>
@@ -79,158 +67,119 @@
 <style>
 	.site-footer {
 		background-color: #ffffff;
-		border-top: 1px solid var(--border-color);
-		padding: 4rem 0 2rem;
+		border-top: 1px solid var(--border-light);
+		padding: 4.5rem 0 2.5rem;
 		margin-top: auto;
 	}
 
-	.footer-grid {
+	.footer-top {
 		display: grid;
-		grid-template-columns: 2fr 1.25fr 1.25fr 1.5fr;
-		gap: 3rem;
-		margin-bottom: 3.5rem;
+		grid-template-columns: 2fr 1fr 1fr 1.25fr;
+		gap: 3.5rem;
+		margin-bottom: 4rem;
 	}
 
-	.footer-logo {
-		display: flex;
-		align-items: center;
-		gap: 0.75rem;
-		margin-bottom: 1rem;
-	}
-
-	.logo-box {
-		width: 36px;
-		height: 36px;
-		background: var(--brand-primary);
-		color: white;
-		font-family: var(--font-heading);
+	.brand-title {
+		font-family: var(--font-sans);
 		font-weight: 800;
-		border-radius: 8px;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 0.95rem;
-	}
-
-	.logo-title {
-		font-family: var(--font-heading);
-		font-weight: 700;
-		font-size: 1.2rem;
+		font-size: 1.25rem;
+		letter-spacing: -0.02em;
 		color: var(--text-primary);
+		margin-bottom: 0.75rem;
 	}
 
-	.company-desc {
-		font-size: 0.9rem;
-		color: var(--text-secondary);
-		line-height: 1.5;
-		margin-bottom: 1.25rem;
-	}
-
-	.footer-address {
-		font-style: normal;
+	.brand-desc {
 		font-size: 0.88rem;
+		color: var(--text-secondary);
+		line-height: 1.6;
+		margin-bottom: 1.25rem;
+		max-width: 380px;
+	}
+
+	.company-address {
+		font-style: normal;
+		font-size: 0.85rem;
 		color: var(--text-muted);
 		line-height: 1.5;
-		background-color: var(--bg-main);
-		padding: 0.75rem 1rem;
-		border-radius: 8px;
-		border: 1px solid var(--border-color);
 	}
 
-	.footer-col h4 {
-		font-family: var(--font-heading);
-		font-size: 1rem;
+	.footer-heading {
+		display: block;
+		font-size: 0.75rem;
 		font-weight: 700;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
 		color: var(--text-primary);
 		margin-bottom: 1.25rem;
 	}
 
-	.footer-col ul {
+	.footer-nav-col ul {
 		list-style: none;
 		display: flex;
 		flex-direction: column;
-		gap: 0.75rem;
+		gap: 0.65rem;
 	}
 
-	.footer-col ul a {
-		font-size: 0.9rem;
+	.footer-nav-col ul a {
+		font-size: 0.88rem;
 		color: var(--text-secondary);
-		transition: color 0.2s ease;
 	}
 
-	.footer-col ul a:hover {
-		color: var(--brand-primary);
+	.footer-nav-col ul a:hover {
+		color: var(--text-primary);
 	}
 
-	.apple-badge-card {
-		display: flex;
-		align-items: flex-start;
-		gap: 0.75rem;
-		background-color: var(--bg-accent-soft);
-		border: 1px solid #bfdbfe;
-		padding: 1rem;
-		border-radius: 12px;
-		margin-bottom: 1rem;
-	}
-
-	.apple-icon {
-		font-size: 1.5rem;
-		line-height: 1;
-		color: #1e293b;
-	}
-
-	.apple-badge-card strong {
-		display: block;
+	.apple-dev-text {
 		font-size: 0.85rem;
-		color: var(--brand-primary);
-		margin-bottom: 0.25rem;
-	}
-
-	.apple-badge-card p {
-		font-size: 0.78rem;
 		color: var(--text-secondary);
-		line-height: 1.35;
+		line-height: 1.5;
+		margin-bottom: 0.75rem;
 	}
 
-	.support-email {
+	.contact-email {
 		font-size: 0.85rem;
 		color: var(--text-muted);
 	}
 
+	.contact-email a {
+		color: var(--text-primary);
+		font-weight: 500;
+	}
+
 	.footer-bottom {
-		border-top: 1px solid var(--border-color);
+		border-top: 1px solid var(--border-light);
 		padding-top: 2rem;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		font-size: 0.85rem;
+		font-size: 0.82rem;
 		color: var(--text-muted);
 		flex-wrap: wrap;
 		gap: 1rem;
 	}
 
-	.footer-bottom-links {
+	.bottom-links {
 		display: flex;
 		gap: 1.5rem;
 	}
 
-	.footer-bottom-links a {
+	.bottom-links a {
 		color: var(--text-muted);
 	}
 
-	.footer-bottom-links a:hover {
-		color: var(--brand-primary);
+	.bottom-links a:hover {
+		color: var(--text-primary);
 	}
 
 	@media (max-width: 900px) {
-		.footer-grid {
+		.footer-top {
 			grid-template-columns: 1fr 1fr;
-			gap: 2rem;
+			gap: 2.5rem;
 		}
 	}
 
 	@media (max-width: 600px) {
-		.footer-grid {
+		.footer-top {
 			grid-template-columns: 1fr;
 		}
 	}
