@@ -20,6 +20,14 @@
 
 		<div class="sections">
 			<section>
+				<h2>GDPR compliance</h2>
+				<p>
+					SPNSS EOOD processes personal data in accordance with the EU General Data Protection
+					Regulation (GDPR).
+				</p>
+			</section>
+
+			<section>
 				<h2>Information we process</h2>
 				<p>
 					When you contact us, we process your email address and message to respond to your enquiry.
