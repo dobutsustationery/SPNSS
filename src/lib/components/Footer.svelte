@@ -8,8 +8,8 @@
 			<div class="footer-brand-col">
 				<div class="brand-title">SPNSS EOOD</div>
 				<p class="brand-desc">
-					An independent Sofia company working across professional services, mobile products and
-					specialist retail.
+					Business consulting and language services, mobile application publishing, and Japanese
+					stationery retail.
 				</p>
 				<address class="company-address">
 					4 Hristo Belchev St., Floor 1<br />

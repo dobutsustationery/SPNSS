@@ -129,14 +129,14 @@ textarea {
 }
 
 .page-hero {
-	padding: clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 6rem);
+	padding: clamp(3.5rem, 7vw, 5.5rem) 0;
 	border-bottom: 1px solid var(--border-light);
 }
 
 .page-hero h1 {
 	max-width: 850px;
 	font-family: var(--font-serif);
-	font-size: clamp(3.5rem, 7.5vw, 6.8rem);
+	font-size: clamp(3.2rem, 6vw, 5.4rem);
 	font-weight: 400;
 	letter-spacing: -0.05em;
 	line-height: 0.95;
@@ -150,7 +150,7 @@ textarea {
 }
 
 .content-section {
-	padding: clamp(4.5rem, 8vw, 7rem) 0;
+	padding: clamp(3rem, 6vw, 5rem) 0;
 }
 
 .content-grid {

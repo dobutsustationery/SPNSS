@@ -10,10 +10,10 @@
 <svelte:head>
 	<link rel="icon" type="image/svg+xml" href={favicon} />
 	<link rel="apple-touch-icon" href={favicon} />
-	<title>SPNSS EOOD — Corporate Consulting, Mobile Apps & E-Commerce</title>
+	<title>SPNSS EOOD — Services, Apps & Retail</title>
 	<meta
 		name="description"
-		content="Official website of SPNSS EOOD, Sofia Bulgaria. Corporate consulting, translation & ESL services, iOS mobile app development, and operator of Japanese stationery e-commerce at dobutsustationery.com."
+		content="SPNSS EOOD provides consulting and language services, publishes mobile applications, and operates Dobutsu Stationery."
 	/>
 </svelte:head>
 
