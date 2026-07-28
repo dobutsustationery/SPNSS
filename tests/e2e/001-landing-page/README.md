@@ -1,6 +1,6 @@
 # Landing Page Rendering
 
-As a visitor or Apple reviewer, I want to view SPNSS EOOD company information, business services, Apple developer credentials, and stationery e-commerce links.
+As a visitor, I want to view SPNSS EOOD company information and business services.
 
 ## Landing Page Content and Corporate Identity
 
@@ -15,13 +15,12 @@ As a visitor or Apple reviewer, I want to view SPNSS EOOD company information, b
 - [x] Consulting and Translation services are visible
 - [x] Mobile Application Engineering is visible
 - [x] Dobutsu Stationery section and link are visible
-- [x] Mobile app support is linked
 
-## iOS Mobile App Support Portal for Apple Developer Compliance
+## Company contact information
 
-![iOS Mobile App Support Portal for Apple Developer Compliance](./screenshots/001-app-support-page.png)
+![Company contact information](./screenshots/001-contact-page.png)
 
 ### Verifications
 
-- [x] App Support Hub title is visible
-- [x] Data deletion instructions are present
+- [x] Company email is visible
+- [x] Registered address is visible

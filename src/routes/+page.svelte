@@ -70,7 +70,6 @@
 		</dl>
 		<div class="actions">
 			<a class="btn btn-primary" href="{base}/contact">Contact</a>
-			<a class="btn btn-secondary" href="{base}/app-support">App support</a>
 		</div>
 	</div>
 </section>
