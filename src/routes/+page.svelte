@@ -89,7 +89,7 @@
 
 	h1 {
 		max-width: 850px;
-		font-family: var(--font-serif);
+		font-family: var(--font-sans);
 		font-size: clamp(3.4rem, 6.3vw, 5.6rem);
 		font-weight: 400;
 		letter-spacing: -0.055em;

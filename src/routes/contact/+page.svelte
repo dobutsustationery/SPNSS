@@ -53,7 +53,7 @@
 	}
 
 	.email {
-		font-family: var(--font-serif);
+		font-family: var(--font-sans);
 		font-size: clamp(2rem, 4vw, 3.5rem);
 		letter-spacing: -0.04em;
 	}
